@@ -47,6 +47,18 @@
     --font-outfit: 'Outfit-Variable', sans-serif;
 }
 
+html,
+body,
+#__nuxt {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
 .hide-scrollbar {
     scrollbar-width: none;
     -ms-overflow-style: none;
