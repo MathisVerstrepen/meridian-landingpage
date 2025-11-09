@@ -9,10 +9,8 @@ export default defineNuxtConfig({
     ssr: false,
 
     i18n: {
-        locales: [
-            { code: 'en', language: 'en-US' },
-            { code: 'fr', language: 'fr-FR' },
-        ],
+        langDir: 'locales',
+        locales: [{ code: 'en', name: 'English', language: 'en-US', file: 'en.json' }],
         defaultLocale: 'en',
     },
 
@@ -88,5 +86,14 @@ export default defineNuxtConfig({
 
     typescript: {
         strict: false,
+    },
+
+    icon: {
+        customCollections: [
+            {
+                prefix: 'local',
+                dir: './app/assets/icons',
+            },
+        ],
     },
 });

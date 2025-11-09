@@ -1,0 +1,111 @@
+{
+    "nav": {
+        "home": "Home",
+        "useCases": "Use Cases",
+        "features": "Features",
+        "docs": "Documentation",
+        "pricing": "Pricing"
+    },
+    "cta": {
+        "getStarted": "Get Started",
+        "viewGithub": "View on GitHub",
+        "learnMore": "Learn More"
+    },
+    "hero": {
+        "badge": "Open Source • MIT Licensed",
+        "title": "Graph-Powered Conversational AI",
+        "subtitle": "Design, visualize, and run complex AI workflows on an interactive canvas. Build branching conversations, orchestrate multi-step reasoning, and interact through a polished chat experience.",
+        "stats": {
+            "models": "50+ Models",
+            "openSource": "100% Open Source",
+            "selfHosted": "Self-Hosted"
+        }
+    },
+    "problem": {
+        "title": "The Problem with Traditional AI Chat",
+        "subtitle": "Linear conversations limit what's possible",
+        "points": {
+            "context": {
+                "title": "Lost Context",
+                "description": "Important information gets buried in long chat histories"
+            },
+            "linear": {
+                "title": "Linear Thinking",
+                "description": "No way to branch, explore alternatives, or backtrack efficiently"
+            },
+            "opacity": {
+                "title": "Black Box Execution",
+                "description": "You can't see how the AI is processing your requests"
+            },
+            "single": {
+                "title": "Single Model Lock-in",
+                "description": "Stuck with one model's perspective and limitations"
+            }
+        }
+    },
+    "solution": {
+        "badge": "Introducing Meridian",
+        "title": "Where Conversations Become Workflows",
+        "description": "Meridian transforms AI interactions from linear chats into visual, executable graphs. Each node represents a step in your workflow—context inputs, model calls, logic branches, or parallel processing. Build once, execute anywhere, and see exactly how your AI agents think.",
+        "features": {
+            "visual": {
+                "title": "Think Visually",
+                "description": "Design workflows as connected nodes on an interactive canvas"
+            },
+            "orchestrate": {
+                "title": "Orchestrate Precisely",
+                "description": "Run entire graphs or specific sub-sections with full visibility"
+            },
+            "branch": {
+                "title": "Branch Naturally",
+                "description": "Create complex decision trees and parallel reasoning paths"
+            },
+            "integrate": {
+                "title": "Integrate Deeply",
+                "description": "Pull GitHub repos, files, and custom data as live context"
+            }
+        }
+    },
+    "features": {
+        "title": "Core Features",
+        "subtitle": "Everything you need to build sophisticated AI workflows",
+        "items": {
+            "canvas": {
+                "title": "Visual Graph Canvas",
+                "description": "Interactive workspace for building and managing AI workflows as interconnected nodes"
+            },
+            "nodes": {
+                "title": "Modular Node System",
+                "description": "Input nodes (Prompt, Attachment, GitHub) and Generator nodes (Text-to-Text, Parallelization, Routing)"
+            },
+            "chat": {
+                "title": "Integrated Chat Interface",
+                "description": "Feature-rich chat view that mirrors and drives the graph execution in real-time"
+            },
+            "execution": {
+                "title": "Execution Engine",
+                "description": "Run entire graphs or sub-sections with visual execution plans and real-time status"
+            },
+            "models": {
+                "title": "Multi-Model Backend",
+                "description": "Access 50+ models via OpenRouter.ai with granular parameter control"
+            },
+            "content": {
+                "title": "Rich Content Rendering",
+                "description": "Full Markdown, LaTeX, syntax highlighting for 200+ languages, and Mermaid diagrams"
+            },
+            "github": {
+                "title": "GitHub Integration",
+                "description": "Use entire repositories or specific files as context for code-aware assistance"
+            },
+            "auth": {
+                "title": "Enterprise Auth",
+                "description": "OAuth (GitHub, Google) and password authentication with JWT security"
+            },
+            "tracking": {
+                "title": "Cost Tracking",
+                "description": "Monitor token usage and costs for every model call with full transparency"
+            }
+        }
+    }
+}
