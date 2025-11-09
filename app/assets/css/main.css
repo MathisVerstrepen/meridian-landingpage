@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+    font-family: 'Outfit-Variable';
+    src:
+        url('~/assets/fonts/outfit/Outfit-Variable.woff2') format('woff2'),
+        url('~/assets/fonts/outfit/Outfit-Variable.woff') format('woff'),
+        url('~/assets/fonts/outfit/Outfit-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+/* Custom color theme */
+@theme {
+    --color-soft-silk: #fffcf2;
+    --color-stone-gray: #ccc5b9;
+    --color-anthracite: #403d39;
+    --color-obsidian: #252422;
+    --color-ember-glow: #eb5e28;
+    --color-terracotta-clay: #b85b46;
+    --color-terracotta-clay-dark: #8b4d3a;
+    --color-olive-grove: #7a8768;
+    --color-olive-grove-dark: #4b5d3a;
+    --color-golden-ochre: #c19a3e;
+    --color-golden-ochre-dark: #8b6a2a;
+    --color-slate-blue: #6a7a8a;
+    --color-slate-blue-dark: #4b5d6a;
+    --color-dried-heather: #6c5b7b;
+    --color-dried-heather-dark: #4b3d5a;
+    --color-sunbaked-sand: #d4c1a8;
+    --color-sunbaked-sand-dark: #b09f87;
+    --color-deep-sea-teal: #468189;
+    --color-deep-sea-teal-dark: #325c61;
+    --color-merlot-wine: #8c2d3a;
+    --color-merlot-wine-dark: #66212a;
+
+    --color-node-cat-prompt: #b2c7db;
+    --color-node-cat-attachment: #bfaad0;
+    --color-node-cat-context: #e5ca5b;
+
+    --color-github: #24292e;
+
+    --font-outfit: 'Outfit-Variable', sans-serif;
+}
+
+.hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-code-scrollbar pre {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.hide-code-scrollbar pre::-webkit-scrollbar {
+    display: none;
+}
