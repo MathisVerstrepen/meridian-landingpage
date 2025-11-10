@@ -106,190 +106,361 @@ const handleHeroMouseLeave = () => {
 
         <!-- Problem Section -->
         <section class="mx-auto max-w-400 px-6 py-24 sm:py-32 lg:px-8">
+            <!-- Section Header -->
             <div class="mx-auto max-w-4xl text-center">
-                <h2 class="text-obsidian text-4xl font-bold tracking-tight sm:text-5xl">
-                    The Problem with Traditional AI Chat
+                <div
+                    class="bg-obsidian/5 mb-6 inline-flex items-center space-x-2 rounded-full px-4
+                        py-2"
+                >
+                    <Icon name="mdi:lightbulb-outline" class="text-ember-glow h-5 w-5" />
+                    <span class="text-obsidian/70 text-sm font-semibold">The Challenge</span>
+                </div>
+                <h2
+                    class="text-obsidian mb-6 text-4xl font-bold tracking-tight sm:text-5xl
+                        lg:text-6xl"
+                >
+                    Why Linear Chat Falls Short
                 </h2>
-                <p class="text-obsidian/80 mt-6 text-lg leading-8">
-                    Linear chat doesn't match non-linear thinking. Your ideas branch, merge, and
-                    evolve—your AI tools should too.
+                <p class="text-obsidian/70 mx-auto max-w-2xl text-lg leading-8 sm:text-xl">
+                    Your thinking isn't a straight line—it branches, explores, and iterates.
+                    Traditional AI chat forces you into a single thread, losing context and clarity.
                 </p>
             </div>
 
             <!-- Visual Comparison -->
-            <div class="relative mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
+            <div
+                class="bg-obsidian mt-12 grid grid-cols-1 gap-6 rounded-3xl p-8 lg:grid-cols-2
+                    lg:gap-8"
+            >
                 <!-- The Old Way: Linear Chat -->
                 <div
-                    class="bg-obsidian border-soft-silk/30 relative overflow-hidden rounded-2xl
-                        border-2 p-8"
+                    class="group relative overflow-hidden rounded-3xl border-2 border-red-900/20
+                        bg-linear-to-br from-red-950/10 to-red-900/5 p-8 shadow-xl transition-all
+                        duration-300 hover:shadow-2xl"
                 >
-                    <h3
-                        class="relative z-10 flex items-center justify-center text-center text-2xl
-                            font-semibold text-red-400"
-                    >
-                        <Icon name="mdi:close" class="mr-2 inline" />
-                        The Old Way: Linear Chat
-                    </h3>
-                    <div class="relative z-10 mt-6 rounded-lg p-4">
-                        <div class="space-y-4">
-                            <!-- Chat Bubble 1 -->
-                            <div class="text-soft-silk bg-stone-gray/10 rounded-lg p-3">
-                                <p class="font-semibold">You</p>
-                                <p class="text-stone-gray mt-1">
+                    <div class="relative flex h-full flex-col">
+                        <!-- Header -->
+                        <div
+                            class="text-merlot-wine mb-8 flex items-center justify-between
+                                brightness-200"
+                        >
+                            <h3 class="flex items-center text-2xl font-bold">
+                                <div
+                                    class="mr-2 flex h-10 w-10 items-center justify-center
+                                        rounded-full"
+                                >
+                                    <Icon name="mdi:close-circle" class="h-6 w-6" />
+                                </div>
+                                Linear Chat
+                            </h3>
+                        </div>
+
+                        <!-- Chat Messages -->
+                        <div class="space-y-3">
+                            <!-- Message 1 -->
+                            <div class="bg-soft-silk/5 transform rounded-xl p-4 shadow-sm">
+                                <p class="text-soft-silk mb-1 text-sm font-bold">You</p>
+                                <p class="text-soft-silk text-sm">
                                     My API endpoint is too slow. How can I optimize it?
                                 </p>
                             </div>
-                            <!-- Chat Bubble 2 -->
-                            <div class="text-soft-silk bg-stone-gray/10 rounded-lg p-3">
-                                <p class="text-ember-glow font-semibold">AI</p>
-                                <p class="text-stone-gray mt-1">
+
+                            <!-- Message 2 -->
+                            <div class="bg-soft-silk/5 rounded-xl p-4 shadow-sm">
+                                <p class="text-ember-glow mb-1 text-sm font-bold">AI</p>
+                                <p class="text-soft-silk text-sm">
                                     You could optimize the database query by adding an index...
                                 </p>
                             </div>
-                            <!-- Frustration Point -->
+
+                            <!-- Frustration Point 1 -->
                             <div
-                                class="border-merlot-wine/50 text-merlot-wine-dark bg-merlot-wine/10
-                                    flex items-center justify-center rounded-md border p-2
-                                    text-center text-sm brightness-200"
+                                class="border-merlot-wine bg-merlot-wine-dark/10 flex items-start
+                                    space-x-2 rounded-lg border-l-4 p-3 brightness-200"
                             >
-                                <Icon name="mdi:arrow-u-left-top" class="mr-2 inline" />
-                                Wait, what if caching is better? You scroll up to reconsider...
+                                <Icon
+                                    name="mdi:alert-circle"
+                                    class="text-merlot-wine mt-0.5 h-5 w-5 shrink-0"
+                                />
+                                <p class="text-merlot-wine text-sm font-medium">
+                                    Wait, what if caching is better? You scroll up to reconsider...
+                                </p>
                             </div>
-                            <!-- Chat Bubble 3 -->
-                            <div class="text-soft-silk bg-stone-gray/10 rounded-lg p-3">
-                                <p class="font-semibold">You</p>
-                                <p class="text-stone-gray mt-1">
+
+                            <!-- Message 3 -->
+                            <div class="bg-soft-silk/5 transform rounded-xl p-4 shadow-sm">
+                                <p class="text-soft-silk mb-1 text-sm font-bold">You</p>
+                                <p class="text-soft-silk text-sm">
                                     Actually, could we try a caching strategy instead?
                                 </p>
                             </div>
-                            <!-- Chat Bubble 4 -->
-                            <div class="text-soft-silk bg-stone-gray/10 rounded-lg p-3">
-                                <p class="text-ember-glow font-semibold">AI</p>
-                                <p class="text-stone-gray mt-1">
+
+                            <!-- Message 4 -->
+                            <div class="bg-soft-silk/5 rounded-xl p-4 shadow-sm">
+                                <p class="text-ember-glow mb-1 text-sm font-bold">AI</p>
+                                <p class="text-soft-silk text-sm">
                                     Sure, here's how to implement Redis caching...
                                 </p>
                             </div>
-                            <!-- Frustration Point -->
+
+                            <!-- Frustration Point 2 -->
                             <div
-                                class="border-golden-ochre/50 text-golden-ochre-dark
-                                    bg-golden-ochre/10 flex items-center justify-center rounded-md
-                                    border p-2 text-center text-sm brightness-150"
+                                class="flex items-start space-x-2 rounded-lg border-l-4
+                                    border-orange-400 bg-orange-400/10 p-3"
                             >
-                                <Icon name="mdi:call-split" class="mr-2 inline" />
-                                Now you have two competing solutions in one messy thread.
+                                <Icon
+                                    name="mdi:alert-circle"
+                                    class="mt-0.5 h-5 w-5 shrink-0 text-orange-400"
+                                />
+                                <p class="text-sm font-medium text-orange-400">
+                                    Now you have two competing solutions in one messy thread.
+                                </p>
                             </div>
-                            <!-- Chat Bubble 5 -->
-                            <div class="text-soft-silk bg-stone-gray/10 rounded-lg p-3">
-                                <p class="font-semibold">You</p>
-                                <p class="text-stone-gray mt-1">
+
+                            <!-- Message 5 -->
+                            <div class="bg-soft-silk/5 transform rounded-xl p-4 shadow-sm">
+                                <p class="text-soft-silk mb-1 text-sm font-bold">You</p>
+                                <p class="text-soft-silk text-sm">
                                     What about async processing? And can you show me the database
                                     query again?
                                 </p>
                             </div>
-                            <!-- Frustration Point -->
+
+                            <!-- Frustration Point 3 -->
                             <div
-                                class="border-dried-heather/50 text-dried-heather-dark
-                                    bg-dried-heather/10 flex items-center justify-center rounded-md
-                                    border p-2 text-center text-sm brightness-200"
+                                class="border-merlot-wine bg-merlot-wine-dark/10 flex items-start
+                                    space-x-2 rounded-lg border-l-4 p-3 brightness-200"
                             >
-                                <Icon name="mdi:content-copy" class="mr-2 inline" />
-                                You've lost the original context. Time to copy-paste everything
-                                again.
+                                <Icon
+                                    name="mdi:close-octagon"
+                                    class="text-merlot-wine mt-0.5 h-5 w-5 shrink-0"
+                                />
+                                <p class="text-merlot-wine text-sm font-medium">
+                                    Context lost. You're copy-pasting and starting over.
+                                </p>
                             </div>
+                        </div>
+
+                        <span class="grow"></span>
+
+                        <!-- Bottom summary -->
+                        <div class="bg-merlot-wine-dark/10 mt-6 rounded-xl p-4 brightness-200">
+                            <p class="text-merlot-wine text-center text-sm font-semibold">
+                                Result:
+                                <span class="text-merlot-wine"
+                                    >Lost context, wasted time, confusion</span
+                                >
+                            </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- The Meridian Way: Visual Workflow -->
-                <div class="bg-obsidian/10 border-obsidian/10 rounded-2xl border-2 p-8">
-                    <h3
-                        class="relative z-10 flex items-center justify-center text-center text-2xl
-                            font-semibold text-green-800"
-                    >
-                        <Icon name="mdi:check" class="mr-2 inline" />
-                        The Meridian Way: Visual Workflow
-                    </h3>
-                    <div></div>
-                    <div class="relative mt-10 flex min-h-[400px] items-center justify-center">
-                        <svg
-                            class="absolute inset-0 h-full w-full"
-                            viewBox="0 0 600 400"
-                            preserveAspectRatio="xMidYMid meet"
-                            aria-hidden="true"
-                        >
-                            <line
-                                x1="300"
-                                y1="84"
-                                x2="300"
-                                y2="145"
-                                stroke="#403d39"
-                                stroke-width="2"
-                            />
-                            <!-- Path to Branch A (Left) -->
-                            <path
-                                d="M 300 214 C 300 260, 104 280, 70 333"
-                                stroke="#403d39"
-                                stroke-width="2"
-                                fill="none"
-                            />
-                            <!-- Path to Branch B (Middle) -->
-                            <path
-                                d="M 300 214 L 300 333"
-                                stroke="#403d39"
-                                stroke-width="2"
-                                fill="none"
-                            />
-                            <!-- Path to Branch C (Right) -->
-                            <path
-                                d="M 300 214 C 300 260, 496 280, 530 333"
-                                stroke="#403d39"
-                                stroke-width="2"
-                                fill="none"
-                            />
-                        </svg>
-                        <div
-                            class="bg-obsidian border-soft-silk/20 absolute top-4 left-1/2 z-10 w-48
-                                -translate-x-1/2 transform rounded-lg border p-3 text-center
-                                shadow-lg"
-                        >
-                            <p class="font-bold text-white">Prompt Node</p>
-                            <p class="text-sm text-slate-200">"Optimize slow API"</p>
+                <div
+                    class="group relative overflow-hidden rounded-3xl border-2 border-green-900/20
+                        bg-linear-to-br from-green-950/10 to-emerald-900/5 p-8 shadow-xl
+                        transition-all duration-300 hover:shadow-2xl"
+                >
+                    <div class="relative">
+                        <!-- Header -->
+                        <div class="mb-8 flex items-center justify-between">
+                            <h3 class="flex items-center text-2xl font-bold text-green-600">
+                                <div
+                                    class="mr-3 flex h-10 w-10 items-center justify-center
+                                        rounded-full"
+                                >
+                                    <Icon name="mdi:check-circle" class="h-6 w-6 text-green-600" />
+                                </div>
+                                Visual Workflow
+                            </h3>
                         </div>
+
+                        <!-- Visual Graph -->
                         <div
-                            class="bg-obsidian border-soft-silk/20 absolute top-36 left-1/2 z-10
-                                w-48 -translate-x-1/2 transform rounded-lg border p-3 text-center
-                                shadow-lg"
+                            class="from-obsidian/5 to-obsidian/10 relative mt-6 flex min-h-[450px]
+                                items-center justify-center rounded-2xl bg-linear-to-b p-6"
                         >
-                            <p class="font-bold text-white">Context Node</p>
-                            <p class="text-sm text-teal-100">`api_endpoint.py`</p>
+                            <svg
+                                class="absolute inset-0 h-full w-full"
+                                viewBox="0 0 600 450"
+                                preserveAspectRatio="xMidYMid meet"
+                                aria-hidden="true"
+                            >
+                                <!-- Main vertical line -->
+                                <line
+                                    x1="173"
+                                    y1="75"
+                                    x2="195"
+                                    y2="75"
+                                    stroke="#ccc5b9"
+                                    stroke-width="2"
+                                    stroke-dasharray="5,5"
+                                >
+                                    <animate
+                                        attributeName="stroke-dashoffset"
+                                        from="10"
+                                        to="0"
+                                        dur="1s"
+                                        repeatCount="indefinite"
+                                    />
+                                </line>
+
+                                <!-- Connecting lines -->
+                                <path
+                                    d="M 300 132 C 300 270, 104 200, 70 319"
+                                    stroke="#ccc5b9"
+                                    stroke-width="2"
+                                    fill="none"
+                                />
+                                <path
+                                    d="M 300 132 L 300 319"
+                                    stroke="#ccc5b9"
+                                    stroke-width="2"
+                                    fill="none"
+                                />
+                                <path
+                                    d="M 300 132 C 300 270, 496 200, 530 319"
+                                    stroke="#ccc5b9"
+                                    stroke-width="2"
+                                    fill="none"
+                                />
+                            </svg>
+
+                            <!-- Root Node -->
+                            <div
+                                class="absolute top-4 left-1/2 z-10 w-52 -translate-x-1/2 transform
+                                    rounded-xl border-2 border-green-200/50 bg-green-200/10 p-4
+                                    text-center shadow-lg"
+                            >
+                                <div class="mb-2 flex justify-center">
+                                    <div
+                                        class="flex h-8 w-8 items-center justify-center rounded-full
+                                            bg-green-200/10"
+                                    >
+                                        <Icon name="mdi:message-text" class="h-4 w-4 text-white" />
+                                    </div>
+                                </div>
+                                <p class="text-soft-silk text-sm font-bold">Initial Prompt</p>
+                                <p class="text-stone-gray mt-1 text-xs">"Optimize slow API"</p>
+                            </div>
+
+                            <!-- Context Node -->
+                            <div
+                                class="absolute top-4 left-24 z-10 w-52 -translate-x-1/2 transform
+                                    rounded-xl border-2 border-cyan-200/50 bg-cyan-200/10 p-4
+                                    text-center shadow-lg"
+                            >
+                                <div class="mb-2 flex justify-center">
+                                    <div
+                                        class="flex h-8 w-8 items-center justify-center rounded-full
+                                            bg-cyan-200/10"
+                                    >
+                                        <Icon name="mdi:file-code" class="h-4 w-4 text-white" />
+                                    </div>
+                                </div>
+                                <p class="text-soft-silk text-sm font-bold">Context</p>
+                                <p class="text-stone-gray mt-1 font-mono text-xs">
+                                    api_endpoint.py
+                                </p>
+                            </div>
+
+                            <!-- Branch A (Left) -->
+                            <div
+                                class="absolute bottom-8 left-4 z-10 w-40 rounded-xl border-2
+                                    border-purple-200/50 bg-purple-200/10 p-3 text-center shadow-lg"
+                            >
+                                <div class="mb-2 flex justify-center">
+                                    <div
+                                        class="flex h-7 w-7 items-center justify-center rounded-full
+                                            bg-purple-200/10"
+                                    >
+                                        <Icon name="mdi:database" class="h-4 w-4 text-white" />
+                                    </div>
+                                </div>
+                                <p class="text-soft-silk text-xs font-bold">Branch A</p>
+                                <p class="text-stone-gray mt-1 text-xs">DB Indexing</p>
+                            </div>
+
+                            <!-- Branch B (Center) -->
+                            <div
+                                class="absolute bottom-8 left-1/2 z-10 w-40 -translate-x-1/2
+                                    transform rounded-xl border-2 border-amber-200/50
+                                    bg-amber-200/10 p-3 text-center shadow-lg"
+                            >
+                                <div class="mb-2 flex justify-center">
+                                    <div
+                                        class="flex h-7 w-7 items-center justify-center rounded-full
+                                            bg-amber-200/10"
+                                    >
+                                        <Icon name="mdi:cached" class="h-4 w-4 text-white" />
+                                    </div>
+                                </div>
+                                <p class="text-soft-silk text-xs font-bold">Branch B</p>
+                                <p class="text-stone-gray mt-1 text-xs">Redis Cache</p>
+                            </div>
+
+                            <!-- Branch C (Right) -->
+                            <div
+                                class="absolute right-4 bottom-8 z-10 w-40 rounded-xl border-2
+                                    border-rose-200/50 bg-rose-200/10 p-3 text-center shadow-lg"
+                            >
+                                <div class="mb-2 flex justify-center">
+                                    <div
+                                        class="flex h-7 w-7 items-center justify-center rounded-full
+                                            bg-rose-200/10"
+                                    >
+                                        <Icon name="mdi:timer-sand" class="h-4 w-4 text-white" />
+                                    </div>
+                                </div>
+                                <p class="text-soft-silk text-xs font-bold">Branch C</p>
+                                <p class="text-stone-gray mt-1 text-xs">Async Process</p>
+                            </div>
                         </div>
-                        <div
-                            class="bg-obsidian border-soft-silk/20 absolute bottom-0 left-4 z-10
-                                w-44 rounded-lg border p-3 text-center shadow-lg"
-                        >
-                            <p class="font-bold text-white">Branch A</p>
-                            <p class="text-sm text-lime-100">Database Indexing</p>
+
+                        <!-- Benefits List -->
+                        <div class="mt-6 space-y-2">
+                            <div class="flex items-center space-x-2 rounded-lg bg-green-50/5 p-3">
+                                <Icon
+                                    name="mdi:check-bold"
+                                    class="h-5 w-5 shrink-0 text-green-600"
+                                />
+                                <p class="text-soft-silk text-sm">
+                                    <span class="font-semibold">Parallel exploration</span> of
+                                    multiple solutions
+                                </p>
+                            </div>
+                            <div class="flex items-center space-x-2 rounded-lg bg-green-50/5 p-3">
+                                <Icon
+                                    name="mdi:check-bold"
+                                    class="h-5 w-5 shrink-0 text-green-600"
+                                />
+                                <p class="text-soft-silk text-sm">
+                                    <span class="font-semibold">Context preserved</span> in every
+                                    branch
+                                </p>
+                            </div>
+                            <div class="flex items-center space-x-2 rounded-lg bg-green-50/5 p-3">
+                                <Icon
+                                    name="mdi:check-bold"
+                                    class="h-5 w-5 shrink-0 text-green-600"
+                                />
+                                <p class="text-soft-silk text-sm">
+                                    <span class="font-semibold">Visual clarity</span> of your entire
+                                    workflow
+                                </p>
+                            </div>
                         </div>
-                        <div
-                            class="bg-obsidian border-soft-silk/20 absolute bottom-0 left-1/2 z-10
-                                w-44 -translate-x-1/2 transform rounded-lg border p-3 text-center
-                                shadow-lg"
-                        >
-                            <p class="font-bold text-white">Branch B</p>
-                            <p class="text-sm text-yellow-100">Redis Caching</p>
-                        </div>
-                        <div
-                            class="bg-obsidian border-soft-silk/20 absolute right-4 bottom-0 z-10
-                                w-44 rounded-lg border p-3 text-center shadow-lg"
-                        >
-                            <p class="font-bold text-white">Branch C</p>
-                            <p class="text-sm text-purple-100">Async Processing</p>
+
+                        <!-- Bottom summary -->
+                        <div class="mt-6 rounded-xl bg-green-500/5 p-4">
+                            <p class="text-center text-sm font-semibold text-green-600">
+                                Result:
+                                <span class="text-green-600"
+                                    >All ideas organized, nothing lost</span
+                                >
+                            </p>
                         </div>
                     </div>
-                    <p class="text-obsidian/80 mt-10 text-center text-lg">
-                        With Meridian, each idea gets its own branch. Explore multiple solutions
-                        visually, without losing context.
-                    </p>
                 </div>
             </div>
         </section>
