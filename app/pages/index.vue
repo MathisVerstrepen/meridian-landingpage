@@ -6,10 +6,12 @@ const { t } = useI18n();
     <div class="font-outfit text-soft-silk min-h-screen bg-[#ece4d0]">
         <!-- Hero Section -->
         <section
-            class="bg-obsidian relative mx-auto w-fit overflow-hidden rounded-3xl px-6 pt-24
-                lg:px-8"
+            class="bg-obsidian relative mx-auto flex min-h-[80vh] max-w-400 items-center
+                justify-center overflow-hidden rounded-3xl px-6 pt-24 lg:px-8"
         >
-            <div class="max-w-8xl mx-auto flex pb-24 sm:pb-32">
+            <LandingDotBackground class="absolute inset-0 z-0 opacity-50" />
+
+            <div class="z-10 mx-auto flex pb-24 sm:pb-32">
                 <!-- Main Heading -->
                 <div class="text-center">
                     <!-- Badge -->
@@ -26,7 +28,7 @@ const { t } = useI18n();
                         </div>
                     </div>
 
-                    <h1 class="mb-6 text-5xl font-bold tracking-tight sm:text-7xl">
+                    <h1 class="mb-10 text-5xl font-bold tracking-tight sm:text-7xl">
                         <span
                             class="from-soft-silk to-stone-gray bg-linear-to-r bg-clip-text
                                 text-transparent"
@@ -35,7 +37,7 @@ const { t } = useI18n();
                         </span>
                     </h1>
                     <p
-                        class="text-stone-gray mx-auto mb-10 max-w-3xl text-lg leading-relaxed
+                        class="text-stone-gray mx-auto mb-16 max-w-3xl text-lg leading-relaxed
                             sm:text-xl"
                     >
                         {{ t('hero.subtitle') }}
@@ -66,15 +68,10 @@ const { t } = useI18n();
                 </div>
 
                 <!-- Hero Visual -->
-                <div
-                    class="border-stone-gray/10 bg-anthracite/30 mt-20 w-1/2 rounded-2xl border p-2
-                        backdrop-blur-sm"
-                >
-                    <div class="bg-obsidian overflow-hidden rounded-xl">
-                        <NuxtImg
-                            src="/docs/imgs/main-canvas-view.png"
-                            alt="Meridian Canvas View"
-                            class="w-full"
+                <div class="ml-5 w-1/2 min-w-[700px] shrink-0 rounded-2xl">
+                    <div class="relative h-full w-full rounded-xl">
+                        <LandingHeroGraph
+                            class="absolute! -top-50! -left-55! scale-[0.48] overflow-visible!"
                         />
                     </div>
                 </div>
@@ -83,7 +80,7 @@ const { t } = useI18n();
 
         <!-- Footer -->
         <footer class="border-anthracite/20 mt-20 border-t px-6 py-12 lg:px-8">
-            <div class="mx-auto max-w-7xl">
+            <div class="mx-auto max-w-400">
                 <div
                     class="flex flex-col items-center justify-between space-y-4 sm:flex-row
                         sm:space-y-0"
