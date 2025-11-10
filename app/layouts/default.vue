@@ -5,7 +5,7 @@ const { t } = useI18n();
 <template>
     <div class="hide-scrollbar m-0 h-screen w-full overflow-y-auto bg-[#ece4d0] p-0">
         <nav class="fixed top-0 z-50 w-full backdrop-blur-xl">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-400 px-6 lg:px-8">
                 <div class="flex h-16 items-center justify-between">
                     <!-- Logo -->
                     <div class="text-ember-glow flex items-center space-x-2">

@@ -1,3 +1,12 @@
+<script lang="ts" setup>
+import {
+    PARALLELIZATION_REPONSE_1,
+    PARALLELIZATION_REPONSE_2,
+    PARALLELIZATION_REPONSE_3,
+    PARALLELIZATION_REPONSE_4,
+} from '@/consts/modelResponses';
+</script>
+
 <template>
     <div class="vue-flow font-sans">
         <div class="vue-flow__container">
@@ -264,7 +273,7 @@
                                                         text-sm caret-current focus:ring-0
                                                         focus:outline-none"
                                                     placeholder="Model #1 response will appear here..."
-                                                    value=""
+                                                    :value="PARALLELIZATION_REPONSE_1"
                                                 ></textarea>
                                             </div>
                                         </div>
@@ -368,7 +377,7 @@
                                                         text-sm caret-current focus:ring-0
                                                         focus:outline-none"
                                                     placeholder="Model #2 response will appear here..."
-                                                    value=""
+                                                    :value="PARALLELIZATION_REPONSE_2"
                                                 ></textarea>
                                             </div>
                                         </div>
@@ -472,7 +481,7 @@
                                                         text-sm caret-current focus:ring-0
                                                         focus:outline-none"
                                                     placeholder="Model #3 response will appear here..."
-                                                    value=""
+                                                    :value="PARALLELIZATION_REPONSE_3"
                                                 ></textarea>
                                             </div>
                                         </div>
@@ -643,7 +652,7 @@
                                                 text-sm caret-current focus:ring-0
                                                 focus:outline-none"
                                             placeholder="Aggregator response will appear here..."
-                                            value=""
+                                            :value="PARALLELIZATION_REPONSE_4"
                                         ></textarea>
                                     </div>
                                 </div>
@@ -785,7 +794,12 @@
                                             rounded-2xl bg-[#49545f] px-3 py-2 text-sm caret-current
                                             focus:ring-0 focus:outline-none"
                                         placeholder="Enter your prompt here"
-                                        value=""
+                                        value="You are an expert Python developer specializing in performance and clean code. Analyze the provided code from the attached GitHub file. Your task is to refactor it to improve three key areas:
+
+Performance: Identify and optimize any bottlenecks.
+Readability: Improve variable names, add comments where necessary, and simplify complex logic.
+Pythonic Idioms: Replace any verbose or non-standard patterns with more idiomatic Python code.
+Provide the complete refactored code block and a brief, bulleted list explaining the specific changes you made and why they are beneficial."
                                     ></textarea>
                                 </div>
                             </div>
