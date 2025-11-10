@@ -94,6 +94,14 @@
                                 class="bg-terracotta-clay border-terracotta-clay-dark relative flex
                                     h-full w-full flex-col rounded-3xl border-2 p-4 pt-3 text-black
                                     shadow-lg transition-all duration-200 ease-in-out"
+                                style="
+                                    box-shadow: 0 0 100px
+                                        color-mix(
+                                            in oklab,
+                                            var(--color-terracotta-clay) 20%,
+                                            transparent
+                                        );
+                                "
                             >
                                 <div class="mb-2 flex w-full items-center justify-between">
                                     <label
@@ -737,6 +745,14 @@
                                 class="bg-slate-blue border-slate-blue-dark relative flex h-full
                                     w-full flex-col rounded-3xl border-2 p-4 pt-3 shadow-lg
                                     transition-all duration-200 ease-in-out"
+                                style="
+                                    box-shadow: 0 0 100px
+                                        color-mix(
+                                            in oklab,
+                                            var(--color-slate-blue) 20%,
+                                            transparent
+                                        );
+                                "
                             >
                                 <div class="mb-2 flex w-full items-center justify-between">
                                     <label class="flex w-fit items-center gap-2"
@@ -832,6 +848,10 @@
                                 class="bg-github border-soft-silk/10 relative flex h-full w-full
                                     flex-col rounded-3xl border-2 p-4 pt-3 text-black shadow-lg
                                     transition-all duration-200 ease-in-out"
+                                style="
+                                    box-shadow: 0 0 100px
+                                        color-mix(in oklab, var(--color-github) 50%, transparent);
+                                "
                             >
                                 <div class="mb-2 flex w-full items-center justify-between">
                                     <label class="flex grow items-center gap-2"
