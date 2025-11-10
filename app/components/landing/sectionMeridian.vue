@@ -49,26 +49,27 @@ const differentiators = [
             <h3 class="text-obsidian text-center text-3xl font-bold tracking-tight sm:text-4xl">
                 {{ t('meridian.differentiators.title') }}
             </h3>
-            <div
-                class="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-x-16 gap-y-10 lg:max-w-none
-                    lg:grid-cols-2"
-            >
+            <div class="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-2">
                 <div
                     v-for="item in differentiators"
                     :key="item.key"
-                    class="bg-obsidian relative rounded-xl p-4 pl-18"
+                    class="bg-obsidian flex items-start gap-x-6 rounded-2xl p-8 ring-1 ring-white/10
+                        transition-all duration-300 ring-inset hover:-translate-y-1
+                        hover:ring-white/20"
                 >
                     <div
-                        class="text-ember-glow bg-soft-silk/5 absolute top-4 left-4 flex h-10 w-10
-                            items-center justify-center rounded-lg"
+                        class="text-ember-glow bg-soft-silk/10 flex h-12 w-12 shrink-0 items-center
+                            justify-center rounded-lg"
                     >
-                        <Icon :name="item.icon" class="h-6 w-6" aria-hidden="true" />
+                        <Icon :name="item.icon" class="h-7 w-7" aria-hidden="true" />
                     </div>
-                    <div class="text-soft-silk mt-1.5 text-lg leading-7 font-semibold">
-                        {{ t(`meridian.differentiators.items.${item.key}.title`) }}
-                    </div>
-                    <div class="text-stone-gray mt-4 font-sans text-sm leading-6">
-                        {{ t(`meridian.differentiators.items.${item.key}.text`) }}
+                    <div>
+                        <div class="text-soft-silk text-lg leading-7 font-semibold">
+                            {{ t(`meridian.differentiators.items.${item.key}.title`) }}
+                        </div>
+                        <div class="text-soft-silk/70 mt-2 font-sans text-sm leading-6">
+                            {{ t(`meridian.differentiators.items.${item.key}.text`) }}
+                        </div>
                     </div>
                 </div>
             </div>
