@@ -90,6 +90,35 @@
             }
         }
     },
+    "meridian": {
+        "header": {
+            "badge": "The Solution",
+            "title1": "Introducing Meridian",
+            "title2": "Where Conversations Become Workflows",
+            "subtitle": "Meridian transforms AI interaction into a visual graph. Connect nodes to build powerful workflows that preserve the rich context and relationships between ideas, unlocking capabilities linear chats can't match."
+        },
+        "differentiators": {
+            "title": "What Makes Meridian Different",
+            "items": {
+                "visual": {
+                    "title": "Visual-First Design",
+                    "text": "See your entire AI workflow at a glance. No more hidden context or mysterious jumps between topics."
+                },
+                "context": {
+                    "title": "True Context Management",
+                    "text": "Branch conversations naturally, merge insights from multiple sources, and maintain precise control over what information flows where."
+                },
+                "orchestration": {
+                    "title": "Model Orchestration",
+                    "text": "Route queries to specialized models, run parallel comparisons, and synthesize results automatically."
+                },
+                "developer": {
+                    "title": "Developer-Native",
+                    "text": "Deep GitHub integration, syntax highlighting for 220+ languages, and LaTeX support built-in."
+                }
+            }
+        }
+    },
     "footer": {
         "brand": "Meridian",
         "credits": "Made with {heart} by Mathis Verstrepen • MIT Licensed"

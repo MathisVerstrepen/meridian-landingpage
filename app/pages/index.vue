@@ -8,6 +8,9 @@
         <!-- Problem Section -->
         <LandingSectionProblem />
 
+        <!-- Meridian Section -->
+        <LandingSectionMeridian />
+
         <!-- Footer -->
         <LandingFooter />
     </div>
