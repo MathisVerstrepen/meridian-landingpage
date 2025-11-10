@@ -117,23 +117,30 @@ const handleHeroMouseLeave = () => {
             </div>
 
             <!-- Visual Comparison -->
-            <div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
+            <div class="relative mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
                 <!-- The Old Way: Linear Chat -->
-                <div class="bg-obsidian/10 border-obsidian/10 rounded-2xl border-2 p-8">
-                    <h3 class="text-obsidian text-center text-2xl font-semibold">
+                <div
+                    class="bg-obsidian border-soft-silk/30 relative overflow-hidden rounded-2xl
+                        border-2 p-8"
+                >
+                    <h3
+                        class="relative z-10 flex items-center justify-center text-center text-2xl
+                            font-semibold text-red-400"
+                    >
+                        <Icon name="mdi:close" class="mr-2 inline" />
                         The Old Way: Linear Chat
                     </h3>
-                    <div class="mt-6 rounded-lg p-4">
+                    <div class="relative z-10 mt-6 rounded-lg p-4">
                         <div class="space-y-4">
                             <!-- Chat Bubble 1 -->
-                            <div class="text-soft-silk bg-obsidian rounded-lg p-3">
+                            <div class="text-soft-silk bg-stone-gray/10 rounded-lg p-3">
                                 <p class="font-semibold">You</p>
                                 <p class="text-stone-gray mt-1">
                                     My API endpoint is too slow. How can I optimize it?
                                 </p>
                             </div>
                             <!-- Chat Bubble 2 -->
-                            <div class="text-soft-silk bg-obsidian rounded-lg p-3">
+                            <div class="text-soft-silk bg-stone-gray/10 rounded-lg p-3">
                                 <p class="text-ember-glow font-semibold">AI</p>
                                 <p class="text-stone-gray mt-1">
                                     You could optimize the database query by adding an index...
@@ -143,20 +150,20 @@ const handleHeroMouseLeave = () => {
                             <div
                                 class="border-merlot-wine/50 text-merlot-wine-dark bg-merlot-wine/10
                                     flex items-center justify-center rounded-md border p-2
-                                    text-center text-sm"
+                                    text-center text-sm brightness-200"
                             >
                                 <Icon name="mdi:arrow-u-left-top" class="mr-2 inline" />
                                 Wait, what if caching is better? You scroll up to reconsider...
                             </div>
                             <!-- Chat Bubble 3 -->
-                            <div class="text-soft-silk bg-obsidian rounded-lg p-3">
+                            <div class="text-soft-silk bg-stone-gray/10 rounded-lg p-3">
                                 <p class="font-semibold">You</p>
                                 <p class="text-stone-gray mt-1">
                                     Actually, could we try a caching strategy instead?
                                 </p>
                             </div>
                             <!-- Chat Bubble 4 -->
-                            <div class="text-soft-silk bg-obsidian rounded-lg p-3">
+                            <div class="text-soft-silk bg-stone-gray/10 rounded-lg p-3">
                                 <p class="text-ember-glow font-semibold">AI</p>
                                 <p class="text-stone-gray mt-1">
                                     Sure, here's how to implement Redis caching...
@@ -166,13 +173,13 @@ const handleHeroMouseLeave = () => {
                             <div
                                 class="border-golden-ochre/50 text-golden-ochre-dark
                                     bg-golden-ochre/10 flex items-center justify-center rounded-md
-                                    border p-2 text-center text-sm"
+                                    border p-2 text-center text-sm brightness-150"
                             >
                                 <Icon name="mdi:call-split" class="mr-2 inline" />
                                 Now you have two competing solutions in one messy thread.
                             </div>
                             <!-- Chat Bubble 5 -->
-                            <div class="text-soft-silk bg-obsidian rounded-lg p-3">
+                            <div class="text-soft-silk bg-stone-gray/10 rounded-lg p-3">
                                 <p class="font-semibold">You</p>
                                 <p class="text-stone-gray mt-1">
                                     What about async processing? And can you show me the database
@@ -183,7 +190,7 @@ const handleHeroMouseLeave = () => {
                             <div
                                 class="border-dried-heather/50 text-dried-heather-dark
                                     bg-dried-heather/10 flex items-center justify-center rounded-md
-                                    border p-2 text-center text-sm"
+                                    border p-2 text-center text-sm brightness-200"
                             >
                                 <Icon name="mdi:content-copy" class="mr-2 inline" />
                                 You've lost the original context. Time to copy-paste everything
@@ -195,10 +202,15 @@ const handleHeroMouseLeave = () => {
 
                 <!-- The Meridian Way: Visual Workflow -->
                 <div class="bg-obsidian/10 border-obsidian/10 rounded-2xl border-2 p-8">
-                    <h3 class="text-obsidian text-center text-2xl font-semibold">
+                    <h3
+                        class="relative z-10 flex items-center justify-center text-center text-2xl
+                            font-semibold text-green-800"
+                    >
+                        <Icon name="mdi:check" class="mr-2 inline" />
                         The Meridian Way: Visual Workflow
                     </h3>
-                    <div class="relative mt-6 flex min-h-[400px] items-center justify-center">
+                    <div></div>
+                    <div class="relative mt-10 flex min-h-[400px] items-center justify-center">
                         <svg
                             class="absolute inset-0 h-full w-full"
                             viewBox="0 0 600 400"
@@ -236,41 +248,48 @@ const handleHeroMouseLeave = () => {
                             />
                         </svg>
                         <div
-                            class="bg-slate-blue/80 absolute top-4 left-1/2 z-10 w-48
-                                -translate-x-1/2 transform rounded-lg p-3 text-center shadow-lg"
+                            class="bg-obsidian border-soft-silk/20 absolute top-4 left-1/2 z-10 w-48
+                                -translate-x-1/2 transform rounded-lg border p-3 text-center
+                                shadow-lg"
                         >
                             <p class="font-bold text-white">Prompt Node</p>
                             <p class="text-sm text-slate-200">"Optimize slow API"</p>
                         </div>
                         <div
-                            class="bg-deep-sea-teal/80 absolute top-36 left-1/2 z-10 w-48
-                                -translate-x-1/2 transform rounded-lg p-3 text-center shadow-lg"
+                            class="bg-obsidian border-soft-silk/20 absolute top-36 left-1/2 z-10
+                                w-48 -translate-x-1/2 transform rounded-lg border p-3 text-center
+                                shadow-lg"
                         >
                             <p class="font-bold text-white">Context Node</p>
                             <p class="text-sm text-teal-100">`api_endpoint.py`</p>
                         </div>
                         <div
-                            class="bg-olive-grove/80 absolute bottom-0 left-4 z-10 w-44 rounded-lg
-                                p-3 text-center shadow-lg"
+                            class="bg-obsidian border-soft-silk/20 absolute bottom-0 left-4 z-10
+                                w-44 rounded-lg border p-3 text-center shadow-lg"
                         >
                             <p class="font-bold text-white">Branch A</p>
                             <p class="text-sm text-lime-100">Database Indexing</p>
                         </div>
                         <div
-                            class="bg-golden-ochre/80 absolute bottom-0 left-1/2 z-10 w-44
-                                -translate-x-1/2 transform rounded-lg p-3 text-center shadow-lg"
+                            class="bg-obsidian border-soft-silk/20 absolute bottom-0 left-1/2 z-10
+                                w-44 -translate-x-1/2 transform rounded-lg border p-3 text-center
+                                shadow-lg"
                         >
                             <p class="font-bold text-white">Branch B</p>
                             <p class="text-sm text-yellow-100">Redis Caching</p>
                         </div>
                         <div
-                            class="bg-dried-heather/80 absolute right-4 bottom-0 z-10 w-44
-                                rounded-lg p-3 text-center shadow-lg"
+                            class="bg-obsidian border-soft-silk/20 absolute right-4 bottom-0 z-10
+                                w-44 rounded-lg border p-3 text-center shadow-lg"
                         >
                             <p class="font-bold text-white">Branch C</p>
                             <p class="text-sm text-purple-100">Async Processing</p>
                         </div>
                     </div>
+                    <p class="text-obsidian/80 mt-10 text-center text-lg">
+                        With Meridian, each idea gets its own branch. Explore multiple solutions
+                        visually, without losing context.
+                    </p>
                 </div>
             </div>
         </section>
