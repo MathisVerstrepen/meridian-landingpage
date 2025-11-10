@@ -199,48 +199,40 @@ const handleHeroMouseLeave = () => {
                         The Meridian Way: Visual Workflow
                     </h3>
                     <div class="relative mt-6 flex min-h-[400px] items-center justify-center">
-                        <svg class="absolute inset-0 h-full w-full" aria-hidden="true">
-                            <defs>
-                                <marker
-                                    id="arrowhead"
-                                    markerWidth="10"
-                                    markerHeight="10"
-                                    refX="8"
-                                    refY="3"
-                                    orient="auto"
-                                >
-                                    <polygon points="0 0, 10 3, 0 6" fill="#403d39" />
-                                </marker>
-                            </defs>
+                        <svg
+                            class="absolute inset-0 h-full w-full"
+                            viewBox="0 0 600 400"
+                            preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true"
+                        >
                             <line
-                                x1="50%"
+                                x1="300"
                                 y1="84"
-                                x2="50%"
-                                y2="140"
+                                x2="300"
+                                y2="145"
                                 stroke="#403d39"
                                 stroke-width="2"
-                                marker-end="url(#arrowhead)"
                             />
+                            <!-- Path to Branch A (Left) -->
                             <path
-                                d="M 50% 140 C 40% 180, 30% 220, 25% 260"
+                                d="M 300 214 C 300 260, 104 280, 70 333"
                                 stroke="#403d39"
                                 stroke-width="2"
                                 fill="none"
-                                marker-end="url(#arrowhead)"
                             />
+                            <!-- Path to Branch B (Middle) -->
                             <path
-                                d="M 50% 140 C 50% 180, 50% 220, 50% 260"
+                                d="M 300 214 L 300 333"
                                 stroke="#403d39"
                                 stroke-width="2"
                                 fill="none"
-                                marker-end="url(#arrowhead)"
                             />
+                            <!-- Path to Branch C (Right) -->
                             <path
-                                d="M 50% 140 C 60% 180, 70% 220, 75% 260"
+                                d="M 300 214 C 300 260, 496 280, 530 333"
                                 stroke="#403d39"
                                 stroke-width="2"
                                 fill="none"
-                                marker-end="url(#arrowhead)"
                             />
                         </svg>
                         <div
