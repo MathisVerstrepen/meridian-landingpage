@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const { t } = useI18n();
+</script>
 
 <template>
     <section class="mx-auto max-w-400 px-6 py-24 sm:py-32 lg:px-8">
@@ -8,16 +10,17 @@
                 class="bg-obsidian/5 mb-6 inline-flex items-center space-x-2 rounded-full px-4 py-2"
             >
                 <Icon name="mdi:lightbulb-outline" class="text-ember-glow h-5 w-5" />
-                <span class="text-obsidian/70 text-sm font-semibold">The Challenge</span>
+                <span class="text-obsidian/70 text-sm font-semibold">{{
+                    t('problem.header.badge')
+                }}</span>
             </div>
             <h2
                 class="text-obsidian mb-6 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
             >
-                Why Linear Chat Falls Short
+                {{ t('problem.header.title') }}
             </h2>
             <p class="text-obsidian/70 mx-auto max-w-2xl text-lg leading-8 sm:text-xl">
-                Your thinking isn't a straight line—it branches, explores, and iterates. Traditional
-                AI chat forces you into a single thread, losing context and clarity.
+                {{ t('problem.header.subtitle') }}
             </p>
         </div>
 
@@ -43,7 +46,7 @@
                             >
                                 <Icon name="mdi:close-circle" class="h-6 w-6" />
                             </div>
-                            Linear Chat
+                            {{ t('problem.linear.title') }}
                         </h3>
                     </div>
 
@@ -51,17 +54,21 @@
                     <div class="space-y-3">
                         <!-- Message 1 -->
                         <div class="bg-soft-silk/5 transform rounded-xl p-4 shadow-sm">
-                            <p class="text-soft-silk mb-1 text-sm font-bold">You</p>
+                            <p class="text-soft-silk mb-1 text-sm font-bold">
+                                {{ t('problem.linear.user') }}
+                            </p>
                             <p class="text-soft-silk text-sm">
-                                My API endpoint is too slow. How can I optimize it?
+                                {{ t('problem.linear.messages.user1') }}
                             </p>
                         </div>
 
                         <!-- Message 2 -->
                         <div class="bg-soft-silk/5 rounded-xl p-4 shadow-sm">
-                            <p class="text-ember-glow mb-1 text-sm font-bold">AI</p>
+                            <p class="text-ember-glow mb-1 text-sm font-bold">
+                                {{ t('problem.linear.ai') }}
+                            </p>
                             <p class="text-soft-silk text-sm">
-                                You could optimize the database query by adding an index...
+                                {{ t('problem.linear.messages.ai1') }}
                             </p>
                         </div>
 
@@ -75,23 +82,27 @@
                                 class="text-merlot-wine mt-0.5 h-5 w-5 shrink-0"
                             />
                             <p class="text-merlot-wine text-sm font-medium">
-                                Wait, what if caching is better? You scroll up to reconsider...
+                                {{ t('problem.linear.messages.frustration1') }}
                             </p>
                         </div>
 
                         <!-- Message 3 -->
                         <div class="bg-soft-silk/5 transform rounded-xl p-4 shadow-sm">
-                            <p class="text-soft-silk mb-1 text-sm font-bold">You</p>
+                            <p class="text-soft-silk mb-1 text-sm font-bold">
+                                {{ t('problem.linear.user') }}
+                            </p>
                             <p class="text-soft-silk text-sm">
-                                Actually, could we try a caching strategy instead?
+                                {{ t('problem.linear.messages.user2') }}
                             </p>
                         </div>
 
                         <!-- Message 4 -->
                         <div class="bg-soft-silk/5 rounded-xl p-4 shadow-sm">
-                            <p class="text-ember-glow mb-1 text-sm font-bold">AI</p>
+                            <p class="text-ember-glow mb-1 text-sm font-bold">
+                                {{ t('problem.linear.ai') }}
+                            </p>
                             <p class="text-soft-silk text-sm">
-                                Sure, here's how to implement Redis caching...
+                                {{ t('problem.linear.messages.ai2') }}
                             </p>
                         </div>
 
@@ -105,16 +116,17 @@
                                 class="mt-0.5 h-5 w-5 shrink-0 text-orange-400"
                             />
                             <p class="text-sm font-medium text-orange-400">
-                                Now you have two competing solutions in one messy thread.
+                                {{ t('problem.linear.messages.frustration2') }}
                             </p>
                         </div>
 
                         <!-- Message 5 -->
                         <div class="bg-soft-silk/5 transform rounded-xl p-4 shadow-sm">
-                            <p class="text-soft-silk mb-1 text-sm font-bold">You</p>
+                            <p class="text-soft-silk mb-1 text-sm font-bold">
+                                {{ t('problem.linear.user') }}
+                            </p>
                             <p class="text-soft-silk text-sm">
-                                What about async processing? And can you show me the database query
-                                again?
+                                {{ t('problem.linear.messages.user3') }}
                             </p>
                         </div>
 
@@ -128,7 +140,7 @@
                                 class="text-merlot-wine mt-0.5 h-5 w-5 shrink-0"
                             />
                             <p class="text-merlot-wine text-sm font-medium">
-                                Context lost. You're copy-pasting and starting over.
+                                {{ t('problem.linear.messages.frustration3') }}
                             </p>
                         </div>
                     </div>
@@ -138,10 +150,10 @@
                     <!-- Bottom summary -->
                     <div class="bg-merlot-wine-dark/10 mt-6 rounded-xl p-4 brightness-200">
                         <p class="text-merlot-wine text-center text-sm font-semibold">
-                            Result:
-                            <span class="text-merlot-wine"
-                                >Lost context, wasted time, confusion</span
-                            >
+                            {{ t('problem.linear.result.label') }}
+                            <span class="text-merlot-wine">{{
+                                t('problem.linear.result.summary')
+                            }}</span>
                         </p>
                     </div>
                 </div>
@@ -162,7 +174,7 @@
                             >
                                 <Icon name="mdi:check-circle" class="h-6 w-6 text-green-600" />
                             </div>
-                            Visual Workflow
+                            {{ t('problem.visual.title') }}
                         </h3>
                     </div>
 
@@ -231,8 +243,12 @@
                                     <Icon name="mdi:message-text" class="h-4 w-4 text-white" />
                                 </div>
                             </div>
-                            <p class="text-soft-silk text-sm font-bold">Initial Prompt</p>
-                            <p class="text-stone-gray mt-1 text-xs">"Optimize slow API"</p>
+                            <p class="text-soft-silk text-sm font-bold">
+                                {{ t('problem.visual.nodes.initial.title') }}
+                            </p>
+                            <p class="text-stone-gray mt-1 text-xs">
+                                {{ t('problem.visual.nodes.initial.subtitle') }}
+                            </p>
                         </div>
 
                         <!-- Context Node -->
@@ -249,8 +265,12 @@
                                     <Icon name="mdi:file-code" class="h-4 w-4 text-white" />
                                 </div>
                             </div>
-                            <p class="text-soft-silk text-sm font-bold">Context</p>
-                            <p class="text-stone-gray mt-1 font-mono text-xs">api_endpoint.py</p>
+                            <p class="text-soft-silk text-sm font-bold">
+                                {{ t('problem.visual.nodes.context.title') }}
+                            </p>
+                            <p class="text-stone-gray mt-1 font-mono text-xs">
+                                {{ t('problem.visual.nodes.context.subtitle') }}
+                            </p>
                         </div>
 
                         <!-- Branch A (Left) -->
@@ -266,8 +286,12 @@
                                     <Icon name="mdi:database" class="h-4 w-4 text-white" />
                                 </div>
                             </div>
-                            <p class="text-soft-silk text-xs font-bold">Branch A</p>
-                            <p class="text-stone-gray mt-1 text-xs">DB Indexing</p>
+                            <p class="text-soft-silk text-xs font-bold">
+                                {{ t('problem.visual.nodes.branchA.title') }}
+                            </p>
+                            <p class="text-stone-gray mt-1 text-xs">
+                                {{ t('problem.visual.nodes.branchA.subtitle') }}
+                            </p>
                         </div>
 
                         <!-- Branch B (Center) -->
@@ -284,8 +308,12 @@
                                     <Icon name="mdi:cached" class="h-4 w-4 text-white" />
                                 </div>
                             </div>
-                            <p class="text-soft-silk text-xs font-bold">Branch B</p>
-                            <p class="text-stone-gray mt-1 text-xs">Redis Cache</p>
+                            <p class="text-soft-silk text-xs font-bold">
+                                {{ t('problem.visual.nodes.branchB.title') }}
+                            </p>
+                            <p class="text-stone-gray mt-1 text-xs">
+                                {{ t('problem.visual.nodes.branchB.subtitle') }}
+                            </p>
                         </div>
 
                         <!-- Branch C (Right) -->
@@ -301,8 +329,12 @@
                                     <Icon name="mdi:timer-sand" class="h-4 w-4 text-white" />
                                 </div>
                             </div>
-                            <p class="text-soft-silk text-xs font-bold">Branch C</p>
-                            <p class="text-stone-gray mt-1 text-xs">Async Process</p>
+                            <p class="text-soft-silk text-xs font-bold">
+                                {{ t('problem.visual.nodes.branchC.title') }}
+                            </p>
+                            <p class="text-stone-gray mt-1 text-xs">
+                                {{ t('problem.visual.nodes.branchC.subtitle') }}
+                            </p>
                         </div>
                     </div>
 
@@ -311,21 +343,28 @@
                         <div class="flex items-center space-x-2 rounded-lg bg-green-50/5 p-3">
                             <Icon name="mdi:check-bold" class="h-5 w-5 shrink-0 text-green-600" />
                             <p class="text-soft-silk text-sm">
-                                <span class="font-semibold">Parallel exploration</span> of multiple
-                                solutions
+                                <span class="font-semibold">{{
+                                    t('problem.visual.benefits.parallel.highlight')
+                                }}</span>
+                                {{ t('problem.visual.benefits.parallel.text') }}
                             </p>
                         </div>
                         <div class="flex items-center space-x-2 rounded-lg bg-green-50/5 p-3">
                             <Icon name="mdi:check-bold" class="h-5 w-5 shrink-0 text-green-600" />
                             <p class="text-soft-silk text-sm">
-                                <span class="font-semibold">Context preserved</span> in every branch
+                                <span class="font-semibold">{{
+                                    t('problem.visual.benefits.context.highlight')
+                                }}</span>
+                                {{ t('problem.visual.benefits.context.text') }}
                             </p>
                         </div>
                         <div class="flex items-center space-x-2 rounded-lg bg-green-50/5 p-3">
                             <Icon name="mdi:check-bold" class="h-5 w-5 shrink-0 text-green-600" />
                             <p class="text-soft-silk text-sm">
-                                <span class="font-semibold">Visual clarity</span> of your entire
-                                workflow
+                                <span class="font-semibold">{{
+                                    t('problem.visual.benefits.clarity.highlight')
+                                }}</span>
+                                {{ t('problem.visual.benefits.clarity.text') }}
                             </p>
                         </div>
                     </div>
@@ -333,8 +372,10 @@
                     <!-- Bottom summary -->
                     <div class="mt-6 rounded-xl bg-green-500/5 p-4">
                         <p class="text-center text-sm font-semibold text-green-600">
-                            Result:
-                            <span class="text-green-600">All ideas organized, nothing lost</span>
+                            {{ t('problem.visual.result.label') }}
+                            <span class="text-green-600">{{
+                                t('problem.visual.result.summary')
+                            }}</span>
                         </p>
                     </div>
                 </div>

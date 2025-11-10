@@ -20,5 +20,74 @@
             "openSource": "100% Open Source",
             "selfHosted": "Self-Hosted"
         }
+    },
+    "problem": {
+        "header": {
+            "badge": "The Challenge",
+            "title": "Why Linear Chat Falls Short",
+            "subtitle": "Your thinking isn't a straight line—it branches, explores, and iterates. Traditional AI chat forces you into a single thread, losing context and clarity."
+        },
+        "linear": {
+            "title": "Linear Chat",
+            "user": "You",
+            "ai": "AI",
+            "messages": {
+                "user1": "My API endpoint is too slow. How can I optimize it?",
+                "ai1": "You could optimize the database query by adding an index...",
+                "frustration1": "Wait, what if caching is better? You scroll up to reconsider...",
+                "user2": "Actually, could we try a caching strategy instead?",
+                "ai2": "Sure, here's how to implement Redis caching...",
+                "frustration2": "Now you have two competing solutions in one messy thread.",
+                "user3": "What about async processing? And can you show me the database query again?",
+                "frustration3": "Context lost. You're copy-pasting and starting over."
+            },
+            "result": {
+                "label": "Result:",
+                "summary": "Lost context, wasted time, confusion"
+            }
+        },
+        "visual": {
+            "title": "Visual Workflow",
+            "nodes": {
+                "initial": {
+                    "title": "Initial Prompt",
+                    "subtitle": "\"Optimize slow API\""
+                },
+                "context": {
+                    "title": "Context",
+                    "subtitle": "api_endpoint.py"
+                },
+                "branchA": {
+                    "title": "Branch A",
+                    "subtitle": "DB Indexing"
+                },
+                "branchB": {
+                    "title": "Branch B",
+                    "subtitle": "Redis Cache"
+                },
+                "branchC": {
+                    "title": "Branch C",
+                    "subtitle": "Async Process"
+                }
+            },
+            "benefits": {
+                "parallel": {
+                    "highlight": "Parallel exploration",
+                    "text": "of multiple solutions"
+                },
+                "context": {
+                    "highlight": "Context preserved",
+                    "text": "in every branch"
+                },
+                "clarity": {
+                    "highlight": "Visual clarity",
+                    "text": "of your entire workflow"
+                }
+            },
+            "result": {
+                "label": "Result:",
+                "summary": "All ideas organized, nothing lost"
+            }
+        }
     }
 }
