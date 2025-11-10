@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const { t } = useI18n();
+</script>
 
 <template>
     <footer class="border-anthracite/20 mt-20 border-t px-6 py-12 lg:px-8">
@@ -13,11 +15,14 @@
                     >
                         <Icon name="local:logo" class="h-5 w-5" />
                     </div>
-                    <span class="text-xl font-semibold">Meridian</span>
+                    <span class="text-xl font-semibold">{{ t('footer.brand') }}</span>
                 </div>
                 <p class="text-anthracite text-sm">
-                    Made with <span class="text-ember-glow">❤️</span> by Mathis Verstrepen • MIT
-                    Licensed
+                    <i18n-t keypath="footer.credits">
+                        <template #heart>
+                            <span class="text-ember-glow">❤️</span>
+                        </template>
+                    </i18n-t>
                 </p>
                 <div class="flex items-center space-x-6">
                     <a

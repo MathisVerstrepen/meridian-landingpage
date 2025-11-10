@@ -89,5 +89,9 @@
                 "summary": "All ideas organized, nothing lost"
             }
         }
+    },
+    "footer": {
+        "brand": "Meridian",
+        "credits": "Made with {heart} by Mathis Verstrepen • MIT Licensed"
     }
 }
