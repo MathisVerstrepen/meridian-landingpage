@@ -1,5 +1,23 @@
 <script lang="ts" setup>
 const { t } = useI18n();
+
+const mouseX = ref(0);
+const mouseY = ref(0);
+const isHoveringHero = ref(false);
+
+const handleHeroMouseMove = (event: MouseEvent) => {
+    const rect = (event.currentTarget as HTMLElement).getBoundingClientRect();
+    mouseX.value = event.clientX - rect.left;
+    mouseY.value = event.clientY - rect.top;
+};
+
+const handleHeroMouseEnter = () => {
+    isHoveringHero.value = true;
+};
+
+const handleHeroMouseLeave = () => {
+    isHoveringHero.value = false;
+};
 </script>
 
 <template>
@@ -8,8 +26,16 @@ const { t } = useI18n();
         <section
             class="bg-obsidian relative mx-auto flex min-h-[80vh] max-w-400 items-center
                 justify-center overflow-hidden rounded-3xl px-6 pt-24 lg:px-8"
+            @mousemove="handleHeroMouseMove"
+            @mouseenter="handleHeroMouseEnter"
+            @mouseleave="handleHeroMouseLeave"
         >
-            <LandingDotBackground class="absolute inset-0 z-0 opacity-50" />
+            <LandingDotBackground
+                class="absolute inset-0 z-0"
+                :glow-x="mouseX"
+                :glow-y="mouseY"
+                :show-glow="isHoveringHero"
+            />
 
             <div class="z-10 mx-auto flex pb-24 sm:pb-32">
                 <!-- Main Heading -->
