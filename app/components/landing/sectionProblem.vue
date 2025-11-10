@@ -48,6 +48,7 @@ const { t } = useI18n();
                             </div>
                             {{ t('problem.linear.title') }}
                         </h3>
+                        {{ t('problem.linear.result.summary') }}
                     </div>
 
                     <!-- Chat Messages -->
@@ -146,16 +147,6 @@ const { t } = useI18n();
                     </div>
 
                     <span class="grow"></span>
-
-                    <!-- Bottom summary -->
-                    <div class="bg-merlot-wine-dark/10 mt-6 rounded-xl p-4 brightness-200">
-                        <p class="text-merlot-wine text-center text-sm font-semibold">
-                            {{ t('problem.linear.result.label') }}
-                            <span class="text-merlot-wine">{{
-                                t('problem.linear.result.summary')
-                            }}</span>
-                        </p>
-                    </div>
                 </div>
             </div>
 
@@ -167,15 +158,16 @@ const { t } = useI18n();
             >
                 <div class="relative">
                     <!-- Header -->
-                    <div class="mb-8 flex items-center justify-between">
-                        <h3 class="flex items-center text-2xl font-bold text-green-600">
+                    <div class="mb-8 flex items-center justify-between text-green-600">
+                        <h3 class="flex items-center text-2xl font-bold">
                             <div
                                 class="mr-3 flex h-10 w-10 items-center justify-center rounded-full"
                             >
-                                <Icon name="mdi:check-circle" class="h-6 w-6 text-green-600" />
+                                <Icon name="mdi:check-circle" class="h-6 w-6" />
                             </div>
                             {{ t('problem.visual.title') }}
                         </h3>
+                        {{ t('problem.visual.result.summary') }}
                     </div>
 
                     <!-- Visual Graph -->
@@ -367,16 +359,6 @@ const { t } = useI18n();
                                 {{ t('problem.visual.benefits.clarity.text') }}
                             </p>
                         </div>
-                    </div>
-
-                    <!-- Bottom summary -->
-                    <div class="mt-6 rounded-xl bg-green-500/5 p-4">
-                        <p class="text-center text-sm font-semibold text-green-600">
-                            {{ t('problem.visual.result.label') }}
-                            <span class="text-green-600">{{
-                                t('problem.visual.result.summary')
-                            }}</span>
-                        </p>
                     </div>
                 </div>
             </div>
