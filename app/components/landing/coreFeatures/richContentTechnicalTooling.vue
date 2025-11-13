@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+const { t } = useI18n();
+
 defineProps<{
     featureRefs: Record<string, HTMLElement>;
 }>();
@@ -18,12 +20,11 @@ defineProps<{
                 <Icon name="mdi:tools" class="h-6 w-6" />
             </div>
             <h3 class="text-obsidian text-2xl font-bold tracking-tight sm:text-3xl">
-                Rich Content & Technical Tooling
+                {{ t('coreFeatures.technicalTooling.title') }}
             </h3>
         </div>
         <p class="text-obsidian/70 mt-4 text-lg leading-relaxed">
-            Meridian is built for technical workflows with first-class support for developer-centric
-            content.
+            {{ t('coreFeatures.technicalTooling.description') }}
         </p>
         <div class="mt-8 space-y-10">
             <div>
@@ -34,8 +35,11 @@ defineProps<{
                             class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
                         />
                         <p class="text-obsidian/80">
-                            <span class="text-obsidian font-semibold">Full Markdown Support</span>:
-                            Headers, tables, lists, and formatting rendered beautifully.
+                            <span class="text-obsidian font-semibold">{{
+                                t('coreFeatures.technicalTooling.items.markdown.title')
+                            }}</span
+                            >:
+                            {{ t('coreFeatures.technicalTooling.items.markdown.description') }}
                         </p>
                     </li>
                     <li class="flex items-start">
@@ -44,8 +48,11 @@ defineProps<{
                             class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
                         />
                         <p class="text-obsidian/80">
-                            <span class="text-obsidian font-semibold">LaTeX Rendering</span>:
-                            Complex mathematical notation with KaTeX integration.
+                            <span class="text-obsidian font-semibold">{{
+                                t('coreFeatures.technicalTooling.items.latex.title')
+                            }}</span
+                            >:
+                            {{ t('coreFeatures.technicalTooling.items.latex.description') }}
                         </p>
                     </li>
                     <li class="flex items-start">
@@ -54,9 +61,11 @@ defineProps<{
                             class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
                         />
                         <p class="text-obsidian/80">
-                            <span class="text-obsidian font-semibold">Syntax Highlighting</span>:
-                            220+ programming languages with dynamic grammar loading for minimal
-                            footprint.
+                            <span class="text-obsidian font-semibold">{{
+                                t('coreFeatures.technicalTooling.items.syntax.title')
+                            }}</span
+                            >:
+                            {{ t('coreFeatures.technicalTooling.items.syntax.description') }}
                         </p>
                     </li>
                     <li class="flex items-start">
@@ -65,9 +74,11 @@ defineProps<{
                             class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
                         />
                         <p class="text-obsidian/80">
-                            <span class="text-obsidian font-semibold">AI-Powered Diagrams</span>:
-                            Generate Mermaid.js flowcharts, sequence diagrams, Gantt charts, and
-                            entity diagrams directly in chat. Export as PNG or edit the source code.
+                            <span class="text-obsidian font-semibold">{{
+                                t('coreFeatures.technicalTooling.items.diagrams.title')
+                            }}</span
+                            >:
+                            {{ t('coreFeatures.technicalTooling.items.diagrams.description') }}
                         </p>
                     </li>
                     <!-- <li class="flex items-start">

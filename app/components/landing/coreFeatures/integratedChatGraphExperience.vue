@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+const { t } = useI18n();
+
 defineProps<{
     featureRefs: Record<string, HTMLElement>;
 }>();
@@ -18,15 +20,11 @@ defineProps<{
                 <Icon name="mdi:swap-horizontal-bold" class="h-6 w-6" />
             </div>
             <h3 class="text-obsidian text-2xl font-bold tracking-tight sm:text-3xl">
-                Integrated Chat & Graph Experience
+                {{ t('coreFeatures.integratedExperience.title') }}
             </h3>
         </div>
         <p class="text-obsidian/70 mt-4 text-lg leading-relaxed">
-            Seamlessly switch between visual graph and clean chat interface. The chat view presents
-            a user-friendly conversation while the graph captures the underlying complexity. Start a
-            conversation in chat, then hop into the graph to branch, merge, or modify the workflow
-            mid-stream. Every message in chat corresponds to a node in your graph—full transparency,
-            zero abstraction loss.
+            {{ t('coreFeatures.integratedExperience.description') }}
         </p>
     </div>
 </template>

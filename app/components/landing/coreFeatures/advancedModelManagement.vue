@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+const { t } = useI18n();
+
 defineProps<{
     featureRefs: Record<string, HTMLElement>;
 }>();
@@ -18,12 +20,11 @@ defineProps<{
                 <Icon name="mdi:tune-variant" class="h-6 w-6" />
             </div>
             <h3 class="text-obsidian text-2xl font-bold tracking-tight sm:text-3xl">
-                Advanced Model Management via OpenRouter
+                {{ t('coreFeatures.modelManagement.title') }}
             </h3>
         </div>
         <p class="text-obsidian/70 mt-4 text-lg leading-relaxed">
-            Access 300+ AI models through a single API key. Meridian's deep OpenRouter integration
-            provides:
+            {{ t('coreFeatures.modelManagement.description') }}
         </p>
         <div class="mt-8 space-y-10">
             <div>
@@ -34,8 +35,11 @@ defineProps<{
                             class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
                         />
                         <p class="text-obsidian/80">
-                            <span class="text-obsidian font-semibold">Model Pinning</span>: Keep
-                            frequently-used models at your fingertips.
+                            <span class="text-obsidian font-semibold">{{
+                                t('coreFeatures.modelManagement.items.pinning.title')
+                            }}</span
+                            >:
+                            {{ t('coreFeatures.modelManagement.items.pinning.description') }}
                         </p>
                     </li>
                     <li class="flex items-start">
@@ -44,8 +48,11 @@ defineProps<{
                             class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
                         />
                         <p class="text-obsidian/80">
-                            <span class="text-obsidian font-semibold">Intelligent Filtering</span>:
-                            Hide free or paid models based on your needs.
+                            <span class="text-obsidian font-semibold">{{
+                                t('coreFeatures.modelManagement.items.filtering.title')
+                            }}</span
+                            >:
+                            {{ t('coreFeatures.modelManagement.items.filtering.description') }}
                         </p>
                     </li>
                     <li class="flex items-start">
@@ -54,8 +61,11 @@ defineProps<{
                             class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
                         />
                         <p class="text-obsidian/80">
-                            <span class="text-obsidian font-semibold">Cost Transparency</span>: See
-                            price per token and context window size before you execute.
+                            <span class="text-obsidian font-semibold">{{
+                                t('coreFeatures.modelManagement.items.transparency.title')
+                            }}</span
+                            >:
+                            {{ t('coreFeatures.modelManagement.items.transparency.description') }}
                         </p>
                     </li>
                     <li class="flex items-start">
@@ -64,16 +74,18 @@ defineProps<{
                             class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
                         />
                         <p class="text-obsidian/80">
-                            <span class="text-obsidian font-semibold">Parameter Control</span>: Set
-                            global defaults and override per-canvas or per-node.
+                            <span class="text-obsidian font-semibold">{{
+                                t('coreFeatures.modelManagement.items.control.title')
+                            }}</span
+                            >:
+                            {{ t('coreFeatures.modelManagement.items.control.description') }}
                         </p>
                     </li>
                 </ul>
             </div>
             <div>
                 <p class="text-obsidian/70 bg-obsidian/5 rounded-lg p-4 text-sm font-medium">
-                    Supported Providers: OpenAI, Anthropic, Google, Mistral, Meta, and dozens of
-                    open-source models.
+                    {{ t('coreFeatures.modelManagement.supported') }}
                 </p>
             </div>
         </div>

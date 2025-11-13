@@ -119,6 +119,160 @@
             }
         }
     },
+    "coreFeatures": {
+        "header": {
+            "badge": "Core Features",
+            "title": "Built for Complex Workflows",
+            "subtitle": "Meridian provides a powerful, developer-centric toolset to move beyond the limitations of linear chat."
+        },
+        "nav": {
+            "visualCanvas": "Visual Graph Canvas",
+            "nodeSystem": "Modular Node System",
+            "integratedExperience": "Integrated Chat & Graph",
+            "modelManagement": "Advanced Model Management",
+            "technicalTooling": "Rich Content & Tooling",
+            "enterpriseFoundation": "Enterprise-Grade Foundation"
+        },
+        "visualCanvas": {
+            "title": "Visual Graph Canvas",
+            "description": "The heart of Meridian is an infinite, interactive canvas where you architect AI workflows by connecting nodes. Drag, drop, and arrange components to visualize complex logic that would be impossible to follow in a linear chat. Watch execution flow in real-time with animated connections and live status indicators.",
+            "executionControl": {
+                "title": "Execution Control",
+                "description": "Select any node to execute precisely what you need:",
+                "items": {
+                    "runUpstream": {
+                        "title": "Run Upstream",
+                        "description": "Execute all parent nodes feeding into your selection."
+                    },
+                    "runDownstream": {
+                        "title": "Run Downstream",
+                        "description": "Execute selected nodes and all their children."
+                    },
+                    "runSelected": {
+                        "title": "Run Selected",
+                        "description": "Execute only specific nodes."
+                    },
+                    "runAll": {
+                        "title": "Run All",
+                        "description": "Process the entire graph from start to finish."
+                    }
+                }
+            }
+        },
+        "nodeSystem": {
+            "title": "Modular Node System",
+            "description": "Combine a wide array of specialized nodes to feed your AI rich context, perform complex processing, and build adaptive logic.",
+            "inputNodes": {
+                "title": "Input Nodes: Feed Your AI Rich Context",
+                "items": {
+                    "prompt": {
+                        "title": "Prompt Node",
+                        "description": "Structured text input with templating support."
+                    },
+                    "attachment": {
+                        "title": "Attachment Node",
+                        "description": "Upload PDFs, images, CSVs, and documents that become part of your workflow context."
+                    },
+                    "github": {
+                        "title": "GitHub Node",
+                        "description": "Connect your GitHub account to browse repositories and inject entire codebases, specific files, or directories as context. Perfect for code review, documentation generation, and architecture analysis."
+                    }
+                }
+            },
+            "generatorNodes": {
+                "title": "Generator Nodes: Intelligent Processing Units",
+                "items": {
+                    "textToText": {
+                        "title": "Text-to-Text",
+                        "description": "Standard LLM calls with full parameter control. Connect multiple models in sequence for specialized processing."
+                    },
+                    "parallelization": {
+                        "title": "Parallelization",
+                        "description": "Execute one prompt against multiple AI models simultaneously (e.g., GPT-5, Claude, and Gemini at once), then use an aggregator model to synthesize a single, superior answer. Ideal for fact-checking, diverse perspective synthesis, and robust analysis."
+                    },
+                    "routing": {
+                        "title": "Routing",
+                        "description": "Create conditional logic that dynamically selects the next node or model based on input content. Build stateful agents that adapt their strategy, route to specialized models, or escalate complex queries automatically."
+                    }
+                }
+            }
+        },
+        "integratedExperience": {
+            "title": "Integrated Chat & Graph Experience",
+            "description": "Seamlessly switch between visual graph and clean chat interface. The chat view presents a user-friendly conversation while the graph captures the underlying complexity. Start a conversation in chat, then hop into the graph to branch, merge, or modify the workflow mid-stream. Every message in chat corresponds to a node in your graph—full transparency, zero abstraction loss."
+        },
+        "modelManagement": {
+            "title": "Advanced Model Management via OpenRouter",
+            "description": "Access 300+ AI models through a single API key. Meridian's deep OpenRouter integration provides:",
+            "items": {
+                "pinning": {
+                    "title": "Model Pinning",
+                    "description": "Keep frequently-used models at your fingertips."
+                },
+                "filtering": {
+                    "title": "Intelligent Filtering",
+                    "description": "Hide free or paid models based on your needs."
+                },
+                "transparency": {
+                    "title": "Cost Transparency",
+                    "description": "See price per token and context window size before you execute."
+                },
+                "control": {
+                    "title": "Parameter Control",
+                    "description": "Set global defaults and override per-canvas or per-node."
+                }
+            },
+            "supported": "Supported Providers: OpenAI, Anthropic, Google, Mistral, Meta, and dozens of open-source models."
+        },
+        "technicalTooling": {
+            "title": "Rich Content & Technical Tooling",
+            "description": "Meridian is built for technical workflows with first-class support for developer-centric content.",
+            "items": {
+                "markdown": {
+                    "title": "Full Markdown Support",
+                    "description": "Headers, tables, lists, and formatting rendered beautifully."
+                },
+                "latex": {
+                    "title": "LaTeX Rendering",
+                    "description": "Complex mathematical notation with KaTeX integration."
+                },
+                "syntax": {
+                    "title": "Syntax Highlighting",
+                    "description": "220+ programming languages with dynamic grammar loading for minimal footprint."
+                },
+                "diagrams": {
+                    "title": "AI-Powered Diagrams",
+                    "description": "Generate Mermaid.js flowcharts, sequence diagrams, Gantt charts, and entity diagrams directly in chat. Export as PNG or edit the source code."
+                }
+            }
+        },
+        "enterpriseFoundation": {
+            "title": "Enterprise-Grade Foundation",
+            "description": "Built from the ground up with security, scalability, and observability in mind.",
+            "items": {
+                "auth": {
+                    "title": "Secure Authentication",
+                    "description": "OAuth 2.0 (GitHub, Google) + username/password with JWT and rotating refresh tokens."
+                },
+                "storage": {
+                    "title": "Hybrid Data Storage",
+                    "description": "PostgreSQL for structured data, Neo4j for graph relationships—optimal performance for both queries and traversals."
+                },
+                "cost": {
+                    "title": "Cost Tracking",
+                    "description": "Every API call shows exact cost and token usage in the chat footer. Monitor spending at glance."
+                },
+                "sentry": {
+                    "title": "Sentry Integration",
+                    "description": "Optional real-time error tracking and performance monitoring for both frontend and backend."
+                },
+                "docker": {
+                    "title": "Docker Deployment",
+                    "description": "Production-ready setup with pre-built images or source builds. One-command deployment with persistent data volumes."
+                }
+            }
+        }
+    },
     "footer": {
         "brand": "Meridian",
         "credits": "Made with {heart} by Mathis Verstrepen • MIT Licensed"

@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+const { t } = useI18n();
+
 defineProps<{
     featureRefs: Record<string, HTMLElement>;
 }>();
@@ -18,20 +20,19 @@ defineProps<{
                 <Icon name="mdi:sitemap-outline" class="h-6 w-6" />
             </div>
             <h3 class="text-obsidian text-2xl font-bold tracking-tight sm:text-3xl">
-                Visual Graph Canvas
+                {{ t('coreFeatures.visualCanvas.title') }}
             </h3>
         </div>
         <p class="text-obsidian/70 mt-4 text-lg leading-relaxed">
-            The heart of Meridian is an infinite, interactive canvas where you architect AI
-            workflows by connecting nodes. Drag, drop, and arrange components to visualize complex
-            logic that would be impossible to follow in a linear chat. Watch execution flow in
-            real-time with animated connections and live status indicators.
+            {{ t('coreFeatures.visualCanvas.description') }}
         </p>
         <div class="mt-8 space-y-10">
             <div>
-                <h4 class="text-obsidian mb-4 text-xl font-semibold">Execution Control</h4>
+                <h4 class="text-obsidian mb-4 text-xl font-semibold">
+                    {{ t('coreFeatures.visualCanvas.executionControl.title') }}
+                </h4>
                 <p class="text-obsidian/70 mb-4">
-                    Select any node to execute precisely what you need:
+                    {{ t('coreFeatures.visualCanvas.executionControl.description') }}
                 </p>
                 <ul class="space-y-4">
                     <li class="flex items-start">
@@ -40,8 +41,17 @@ defineProps<{
                             class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
                         />
                         <p class="text-obsidian/80">
-                            <span class="text-obsidian font-semibold">Run Upstream</span>: Execute
-                            all parent nodes feeding into your selection.
+                            <span class="text-obsidian font-semibold">{{
+                                t(
+                                    'coreFeatures.visualCanvas.executionControl.items.runUpstream.title',
+                                )
+                            }}</span
+                            >:
+                            {{
+                                t(
+                                    'coreFeatures.visualCanvas.executionControl.items.runUpstream.description',
+                                )
+                            }}
                         </p>
                     </li>
                     <li class="flex items-start">
@@ -50,8 +60,17 @@ defineProps<{
                             class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
                         />
                         <p class="text-obsidian/80">
-                            <span class="text-obsidian font-semibold">Run Downstream</span>: Execute
-                            selected nodes and all their children.
+                            <span class="text-obsidian font-semibold">{{
+                                t(
+                                    'coreFeatures.visualCanvas.executionControl.items.runDownstream.title',
+                                )
+                            }}</span
+                            >:
+                            {{
+                                t(
+                                    'coreFeatures.visualCanvas.executionControl.items.runDownstream.description',
+                                )
+                            }}
                         </p>
                     </li>
                     <li class="flex items-start">
@@ -60,8 +79,17 @@ defineProps<{
                             class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
                         />
                         <p class="text-obsidian/80">
-                            <span class="text-obsidian font-semibold">Run Selected</span>: Execute
-                            only specific nodes.
+                            <span class="text-obsidian font-semibold">{{
+                                t(
+                                    'coreFeatures.visualCanvas.executionControl.items.runSelected.title',
+                                )
+                            }}</span
+                            >:
+                            {{
+                                t(
+                                    'coreFeatures.visualCanvas.executionControl.items.runSelected.description',
+                                )
+                            }}
                         </p>
                     </li>
                     <li class="flex items-start">
@@ -70,8 +98,15 @@ defineProps<{
                             class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
                         />
                         <p class="text-obsidian/80">
-                            <span class="text-obsidian font-semibold">Run All</span>: Process the
-                            entire graph from start to finish.
+                            <span class="text-obsidian font-semibold">{{
+                                t('coreFeatures.visualCanvas.executionControl.items.runAll.title')
+                            }}</span
+                            >:
+                            {{
+                                t(
+                                    'coreFeatures.visualCanvas.executionControl.items.runAll.description',
+                                )
+                            }}
                         </p>
                     </li>
                 </ul>
