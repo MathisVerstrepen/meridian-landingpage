@@ -11,6 +11,9 @@
         <!-- Meridian Section -->
         <LandingSectionMeridian />
 
+        <!-- Core Features Section -->
+        <LandingSectionCoreFeatures />
+
         <!-- Footer -->
         <LandingFooter />
     </div>

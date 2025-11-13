@@ -1,0 +1,83 @@
+<script lang="ts" setup>
+defineProps<{
+    featureRefs: Record<string, HTMLElement>;
+}>();
+</script>
+
+<template>
+    <div
+        id="model-management"
+        :ref="(el) => (featureRefs['model-management'] = el as HTMLElement)"
+        class="scroll-mt-24"
+    >
+        <div class="flex items-center space-x-4">
+            <div
+                class="bg-ember-glow/10 text-ember-glow flex h-10 w-10 shrink-0 items-center
+                    justify-center rounded-lg"
+            >
+                <Icon name="mdi:tune-variant" class="h-6 w-6" />
+            </div>
+            <h3 class="text-obsidian text-2xl font-bold tracking-tight sm:text-3xl">
+                Advanced Model Management via OpenRouter
+            </h3>
+        </div>
+        <p class="text-obsidian/70 mt-4 text-lg leading-relaxed">
+            Access 300+ AI models through a single API key. Meridian's deep OpenRouter integration
+            provides:
+        </p>
+        <div class="mt-8 space-y-10">
+            <div>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <Icon
+                            name="mdi:check-circle-outline"
+                            class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
+                        />
+                        <p class="text-obsidian/80">
+                            <span class="text-obsidian font-semibold">Model Pinning</span>: Keep
+                            frequently-used models at your fingertips.
+                        </p>
+                    </li>
+                    <li class="flex items-start">
+                        <Icon
+                            name="mdi:check-circle-outline"
+                            class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
+                        />
+                        <p class="text-obsidian/80">
+                            <span class="text-obsidian font-semibold">Intelligent Filtering</span>:
+                            Hide free or paid models based on your needs.
+                        </p>
+                    </li>
+                    <li class="flex items-start">
+                        <Icon
+                            name="mdi:check-circle-outline"
+                            class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
+                        />
+                        <p class="text-obsidian/80">
+                            <span class="text-obsidian font-semibold">Cost Transparency</span>: See
+                            price per token and context window size before you execute.
+                        </p>
+                    </li>
+                    <li class="flex items-start">
+                        <Icon
+                            name="mdi:check-circle-outline"
+                            class="text-ember-glow mt-1 mr-3 h-5 w-5 shrink-0"
+                        />
+                        <p class="text-obsidian/80">
+                            <span class="text-obsidian font-semibold">Parameter Control</span>: Set
+                            global defaults and override per-canvas or per-node.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="text-obsidian/70 bg-obsidian/5 rounded-lg p-4 text-sm font-medium">
+                    Supported Providers: OpenAI, Anthropic, Google, Mistral, Meta, and dozens of
+                    open-source models.
+                </p>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style scoped></style>
