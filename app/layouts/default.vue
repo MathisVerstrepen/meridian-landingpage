@@ -36,7 +36,7 @@ const navLinks = [
                 backdrop-blur-md transition-all duration-300"
         >
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div class="flex h-20 items-center justify-between">
+                <div class="flex h-18 items-center justify-between">
                     <!-- Logo -->
                     <NuxtLink to="/" class="group flex items-center space-x-3">
                         <div
