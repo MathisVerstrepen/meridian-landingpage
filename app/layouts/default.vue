@@ -161,8 +161,7 @@ const navLinks = [
     </div>
 </template>
 
-<style scoped>
-/* Ensure smooth scrolling if not already set globally */
+<style>
 html {
     scroll-behavior: smooth;
 }

@@ -3,7 +3,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-    <section class="mx-auto max-w-400 px-6 py-24 sm:py-32 lg:px-8">
+    <section class="3xl:w-400 mx-auto px-6 py-24 sm:py-32 lg:px-8">
         <!-- Section Header -->
         <div class="mx-auto max-w-4xl text-center">
             <div
@@ -26,13 +26,14 @@ const { t } = useI18n();
 
         <!-- Visual Comparison -->
         <div
-            class="bg-obsidian mt-12 grid grid-cols-1 gap-6 rounded-3xl p-8 lg:grid-cols-2 lg:gap-8"
+            class="bg-obsidian 3xl:grid-cols-2 3xl:gap-8 mt-12 grid grid-cols-1 gap-6 rounded-3xl
+                p-8"
         >
             <!-- The Old Way: Linear Chat -->
             <div
-                class="group relative overflow-hidden rounded-3xl border-2 border-red-900/20
-                    bg-linear-to-br from-red-950/10 to-red-900/5 p-8 shadow-xl transition-all
-                    duration-300 hover:shadow-2xl"
+                class="group relative w-[720px] overflow-hidden rounded-3xl border-2
+                    border-red-900/20 bg-linear-to-br from-red-950/10 to-red-900/5 p-8 shadow-xl
+                    transition-all duration-300 hover:shadow-2xl"
             >
                 <div class="relative flex h-full flex-col">
                     <!-- Header -->
@@ -152,9 +153,9 @@ const { t } = useI18n();
 
             <!-- The Meridian Way: Visual Workflow -->
             <div
-                class="group relative overflow-hidden rounded-3xl border-2 border-green-900/20
-                    bg-linear-to-br from-green-950/10 to-emerald-900/5 p-8 shadow-xl transition-all
-                    duration-300 hover:shadow-2xl"
+                class="group relative w-[720px] overflow-hidden rounded-3xl border-2
+                    border-green-900/20 bg-linear-to-br from-green-950/10 to-emerald-900/5 p-8
+                    shadow-xl transition-all duration-300 hover:shadow-2xl"
             >
                 <div class="relative">
                     <!-- Header -->

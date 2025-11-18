@@ -48,6 +48,8 @@
     --color-github: #24292e;
 
     --font-outfit: 'Outfit-Variable', sans-serif;
+
+    --breakpoint-3xl: 1750px;
 }
 
 /* Base styles */
