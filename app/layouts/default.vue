@@ -3,8 +3,8 @@ const { t } = useI18n();
 </script>
 
 <template>
-    <div class="hide-scrollbar m-0 h-screen w-full overflow-y-auto bg-[#ece4d0] p-0">
-        <nav class="fixed top-0 z-50 w-full backdrop-blur-xl">
+    <div class="hide-scrollbar m-0 h-screen w-full overflow-y-auto bg-[rgb(236,228,208)] p-0">
+        <nav class="fixed top-0 z-50 w-full bg-[rgb(236,228,208)]/80 backdrop-blur-md">
             <div class="mx-auto max-w-400 px-6 lg:px-8">
                 <div class="flex h-16 items-center justify-between">
                     <!-- Logo -->
@@ -19,7 +19,7 @@ const { t } = useI18n();
                     </div>
 
                     <!-- Nav Links -->
-                    <div class="hidden items-center space-x-8 md:flex">
+                    <div class="hidden items-center space-x-12 px-12 py-3 md:flex">
                         <NuxtLink
                             to="/"
                             class="text-obsidian hover:text-ember-glow text-sm font-medium
@@ -75,5 +75,4 @@ const { t } = useI18n();
         </div>
     </div>
 </template>
-
 <style scoped></style>
