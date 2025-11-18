@@ -156,6 +156,11 @@
                         "title": "Run All",
                         "description": "Process the entire graph from start to finish."
                     }
+                },
+                "imagesAlt": {
+                    "graphView": "A visual graph canvas showing nodes and connections",
+                    "closeUpNode": "Close-up of a node displaying execution controls",
+                    "executionControls": "Execution control interface when running a group of nodes"
                 }
             }
         },

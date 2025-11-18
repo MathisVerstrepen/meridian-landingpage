@@ -111,6 +111,26 @@ defineProps<{
                     </li>
                 </ul>
             </div>
+            <LandingCarousel
+                :images="[
+                    {
+                        src: '/images/execution-controls-1.png',
+                        label: t('coreFeatures.visualCanvas.executionControl.imagesAlt.graphView'),
+                    },
+                    {
+                        src: '/images/execution-controls-2.png',
+                        label: t(
+                            'coreFeatures.visualCanvas.executionControl.imagesAlt.closeUpNode',
+                        ),
+                    },
+                    {
+                        src: '/images/execution-controls-3.png',
+                        label: t(
+                            'coreFeatures.visualCanvas.executionControl.imagesAlt.executionControls',
+                        ),
+                    },
+                ]"
+            />
         </div>
     </div>
 </template>

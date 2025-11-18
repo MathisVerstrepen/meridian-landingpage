@@ -131,7 +131,7 @@ onMounted(() => {
                     class="pointer-events-none absolute inset-0 bg-linear-to-t from-black/60
                         via-black/20 to-transparent"
                 ></div>
-                <div class="pointer-events-none absolute bottom-0 left-0 p-6">
+                <div class="pointer-events-none absolute bottom-2 left-0 p-6">
                     <h3 class="text-soft-silk text-2xl font-bold tracking-tight">
                         {{ image.label }}
                     </h3>
@@ -167,7 +167,7 @@ onMounted(() => {
         </template>
 
         <!-- Navigation Dots -->
-        <div class="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 space-x-2">
+        <div class="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 space-x-2">
             <button
                 v-for="(_, index) in images"
                 :key="index"
