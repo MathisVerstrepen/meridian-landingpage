@@ -96,38 +96,40 @@ const scrollToNext = () => {
         </div>
 
         <!-- Next Section Navigation Button -->
-        <Teleport to="body">
-            <Transition
-                enter-active-class="transition duration-300 ease-out"
-                enter-from-class="translate-y-10 opacity-0"
-                enter-to-class="translate-y-0 opacity-100"
-                leave-active-class="transition duration-200 ease-in"
-                leave-from-class="translate-y-0 opacity-100"
-                leave-to-class="translate-y-10 opacity-0"
-            >
-                <button
-                    v-if="nextSection"
-                    @click="scrollToNext"
-                    class="bg-obsidian/80 text-soft-silk hover:bg-ember-glow group fixed bottom-8
-                        left-1/2 z-50 flex -translate-x-1/2 cursor-pointer items-center gap-3
-                        rounded-full px-6 py-3 shadow-lg backdrop-blur-md transition-all
-                        hover:scale-105"
-                    :aria-label="`Scroll to ${t(nextSection.label)}`"
+        <ClientOnly>
+            <Teleport to="body">
+                <Transition
+                    enter-active-class="transition duration-300 ease-out"
+                    enter-from-class="translate-y-10 opacity-0"
+                    enter-to-class="translate-y-0 opacity-100"
+                    leave-active-class="transition duration-200 ease-in"
+                    leave-from-class="translate-y-0 opacity-100"
+                    leave-to-class="translate-y-10 opacity-0"
                 >
-                    <Icon
-                        :name="nextSection.icon"
-                        class="text-ember-glow h-5 w-5 transition-colors group-hover:text-white"
-                    />
-                    <span class="text-sm font-semibold tracking-wide">{{
-                        t(nextSection.label)
-                    }}</span>
-                    <Icon
-                        name="mdi:chevron-down"
-                        class="h-5 w-5 opacity-70 group-hover:opacity-100"
-                    />
-                </button>
-            </Transition>
-        </Teleport>
+                    <button
+                        v-if="nextSection"
+                        @click="scrollToNext"
+                        class="bg-obsidian/80 text-soft-silk hover:bg-ember-glow group fixed
+                            bottom-8 left-1/2 z-50 flex -translate-x-1/2 cursor-pointer items-center
+                            gap-3 rounded-full px-6 py-3 shadow-lg backdrop-blur-md transition-all
+                            hover:scale-105"
+                        :aria-label="`Scroll to ${t(nextSection.label)}`"
+                    >
+                        <Icon
+                            :name="nextSection.icon"
+                            class="text-ember-glow h-5 w-5 transition-colors group-hover:text-white"
+                        />
+                        <span class="text-sm font-semibold tracking-wide">{{
+                            t(nextSection.label)
+                        }}</span>
+                        <Icon
+                            name="mdi:chevron-down"
+                            class="h-5 w-5 opacity-70 group-hover:opacity-100"
+                        />
+                    </button>
+                </Transition>
+            </Teleport>
+        </ClientOnly>
     </div>
 </template>
 
