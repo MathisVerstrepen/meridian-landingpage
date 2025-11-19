@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     devtools: { enabled: false },
     css: ['~/assets/css/main.css'],
     modules: ['@nuxt/icon', '@nuxt/image', '@nuxtjs/i18n'],
-    ssr: false,
+    ssr: true,
 
     i18n: {
         langDir: 'locales',
