@@ -1,0 +1,285 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "useCases": "Anwendungsfälle",
+        "features": "Funktionen",
+        "docs": "Dokumentation",
+        "pricing": "Preise"
+    },
+    "cta": {
+        "getStarted": "Loslegen",
+        "viewGithub": "Auf GitHub ansehen",
+        "learnMore": "Mehr erfahren"
+    },
+    "hero": {
+        "badge": "Open Source • MIT-lizenziert",
+        "title": "Graph-basierte Konversations-KI",
+        "subtitle": "Entwerfen, visualisieren und führen Sie komplexe KI-Workflows auf einem interaktiven Canvas aus. Erstellen Sie verzweigte Konversationen, orchestrieren Sie mehrstufige Überlegungen und interagieren Sie über ein ausgefeiltes Chat-Erlebnis.",
+        "stats": {
+            "models": "50+ Modelle",
+            "openSource": "100% Open Source",
+            "selfHosted": "Selbst gehostet"
+        }
+    },
+    "problem": {
+        "header": {
+            "badge": "Die Herausforderung",
+            "title": "Warum linearer Chat nicht ausreicht",
+            "subtitle": "Ihr Denken verläuft nicht geradlinig – es verzweigt sich, erkundet und iteriert. Herkömmliche KI-Chats zwingen Sie in einen einzigen Thread, wodurch Kontext und Klarheit verloren gehen."
+        },
+        "linear": {
+            "title": "Linearer Chat",
+            "user": "Sie",
+            "ai": "KI",
+            "messages": {
+                "user1": "Mein API-Endpunkt ist zu langsam. Wie kann ich ihn optimieren?",
+                "ai1": "Sie könnten die Datenbankabfrage optimieren, indem Sie einen Index hinzufügen...",
+                "frustration1": "Moment, was wenn Caching besser ist? Sie scrollen hoch, um neu zu überlegen...",
+                "user2": "Eigentlich, könnten wir stattdessen eine Caching-Strategie versuchen?",
+                "ai2": "Sicher, hier ist eine Anleitung zur Implementierung von Redis-Caching...",
+                "frustration2": "Jetzt haben Sie zwei konkurrierende Lösungen in einem chaotischen Thread.",
+                "user3": "Was ist mit asynchroner Verarbeitung? Und können Sie mir die Datenbankabfrage nochmal zeigen?",
+                "frustration3": "Kontext verloren. Sie kopieren, fügen ein und fangen von vorne an."
+            },
+            "result": {
+                "label": "Ergebnis:",
+                "summary": "Verlorener Kontext, verschwendete Zeit, Verwirrung"
+            }
+        },
+        "visual": {
+            "title": "Visueller Workflow",
+            "nodes": {
+                "initial": {
+                    "title": "Initialer Prompt",
+                    "subtitle": "\"Langsame API optimieren\""
+                },
+                "context": {
+                    "title": "Kontext",
+                    "subtitle": "api_endpoint.py"
+                },
+                "branchA": {
+                    "title": "Zweig A",
+                    "subtitle": "DB-Indexierung"
+                },
+                "branchB": {
+                    "title": "Zweig B",
+                    "subtitle": "Redis-Cache"
+                },
+                "branchC": {
+                    "title": "Zweig C",
+                    "subtitle": "Async-Prozess"
+                }
+            },
+            "benefits": {
+                "parallel": {
+                    "highlight": "Parallele Erkundung",
+                    "text": "mehrerer Lösungen"
+                },
+                "context": {
+                    "highlight": "Kontext bewahrt",
+                    "text": "in jedem Zweig"
+                },
+                "clarity": {
+                    "highlight": "Visuelle Klarheit",
+                    "text": "Ihres gesamten Workflows"
+                }
+            },
+            "result": {
+                "label": "Ergebnis:",
+                "summary": "Alle Ideen organisiert, nichts geht verloren"
+            }
+        }
+    },
+    "meridian": {
+        "header": {
+            "badge": "Die Lösung",
+            "title1": "Wir stellen vor: Meridian",
+            "title2": "Wo Konversationen zu Workflows werden",
+            "subtitle": "Meridian verwandelt KI-Interaktion in einen visuellen Graphen. Verbinden Sie Knoten, um leistungsstarke Workflows zu erstellen, die den reichen Kontext und die Beziehungen zwischen Ideen bewahren – und so Fähigkeiten freisetzen, die lineare Chats nicht erreichen können."
+        },
+        "differentiators": {
+            "title": "Was Meridian einzigartig macht",
+            "items": {
+                "visual": {
+                    "title": "Visuelles Design",
+                    "text": "Sehen Sie Ihren gesamten KI-Workflow auf einen Blick. Kein versteckter Kontext oder mysteriöse Sprünge zwischen Themen mehr."
+                },
+                "context": {
+                    "title": "Echtes Kontextmanagement",
+                    "text": "Verzweigen Sie Konversationen natürlich, führen Sie Erkenntnisse aus mehreren Quellen zusammen und behalten Sie die präzise Kontrolle darüber, welche Informationen wohin fließen."
+                },
+                "orchestration": {
+                    "title": "Modell-Orchestrierung",
+                    "text": "Leiten Sie Anfragen an spezialisierte Modelle weiter, führen Sie parallele Vergleiche durch und synthetisieren Sie Ergebnisse automatisch."
+                },
+                "developer": {
+                    "title": "Entwickler-Nativ",
+                    "text": "Tiefe GitHub-Integration, Syntax-Highlighting für 220+ Sprachen und integrierter LaTeX-Support."
+                }
+            }
+        }
+    },
+    "coreFeatures": {
+        "header": {
+            "badge": "Kernfunktionen",
+            "title": "Gebaut für komplexe Workflows",
+            "subtitle": "Meridian bietet ein leistungsstarkes, entwicklerzentriertes Toolset, um die Grenzen des linearen Chats zu überwinden."
+        },
+        "nav": {
+            "visualCanvas": "Visueller Graph-Canvas",
+            "nodeSystem": "Modulares Knotensystem",
+            "integratedExperience": "Integriertes Chat- & Graph-Erlebnis",
+            "modelManagement": "Erweitertes Modellmanagement",
+            "technicalTooling": "Rich Content & Tools",
+            "enterpriseFoundation": "Enterprise-Grade Basis"
+        },
+        "visualCanvas": {
+            "title": "Visueller Graph-Canvas",
+            "description": "Das Herzstück von Meridian ist ein unendlicher, interaktiver Canvas, auf dem Sie KI-Workflows durch das Verbinden von Knoten entwerfen. Ziehen, ablegen und arrangieren Sie Komponenten, um komplexe Logik zu visualisieren, die in einem linearen Chat unmöglich zu verfolgen wäre. Beobachten Sie den Ausführungsfluss in Echtzeit mit animierten Verbindungen und Live-Statusanzeigen.",
+            "executionControl": {
+                "title": "Ausführungssteuerung",
+                "description": "Wählen Sie einen beliebigen Knoten, um präzise das auszuführen, was Sie benötigen:",
+                "items": {
+                    "runUpstream": {
+                        "title": "Upstream ausführen",
+                        "description": "Führt alle Elternknoten aus, die in Ihre Auswahl einspeisen."
+                    },
+                    "runDownstream": {
+                        "title": "Downstream ausführen",
+                        "description": "Führt die ausgewählten Knoten und alle ihre Kinder aus."
+                    },
+                    "runSelected": {
+                        "title": "Auswahl ausführen",
+                        "description": "Führt nur spezifische Knoten aus."
+                    },
+                    "runAll": {
+                        "title": "Alles ausführen",
+                        "description": "Verarbeitet den gesamten Graphen von Anfang bis Ende."
+                    }
+                },
+                "imagesAlt": {
+                    "graphView": "Ein visueller Graph-Canvas mit Knoten und Verbindungen",
+                    "closeUpNode": "Nahaufnahme eines Knotens mit Ausführungssteuerungen",
+                    "executionControls": "Schnittstelle zur Ausführungssteuerung beim Starten einer Knotengruppe"
+                }
+            }
+        },
+        "nodeSystem": {
+            "title": "Modulares Knotensystem",
+            "description": "Kombinieren Sie eine breite Palette spezialisierter Knoten, um Ihre KI mit reichhaltigem Kontext zu versorgen, komplexe Verarbeitungen durchzuführen und adaptive Logik zu erstellen.",
+            "inputNodes": {
+                "title": "Eingabeknoten: Versorgen Sie Ihre KI mit reichem Kontext",
+                "items": {
+                    "prompt": {
+                        "title": "Prompt-Knoten",
+                        "description": "Strukturierte Texteingabe mit Template-Unterstützung."
+                    },
+                    "attachment": {
+                        "title": "Anhang-Knoten",
+                        "description": "Laden Sie PDFs, Bilder, CSVs und Dokumente hoch, die Teil Ihres Workflow-Kontexts werden."
+                    },
+                    "github": {
+                        "title": "GitHub-Knoten",
+                        "description": "Verbinden Sie Ihr GitHub-Konto, um Repositories zu durchsuchen und ganze Codebasen, spezifische Dateien oder Verzeichnisse als Kontext einzufügen. Perfekt für Code-Reviews, Dokumentationsgenerierung und Architekturanalyse."
+                    }
+                }
+            },
+            "generatorNodes": {
+                "title": "Generator-Knoten: Intelligente Verarbeitungseinheiten",
+                "items": {
+                    "textToText": {
+                        "title": "Text-zu-Text",
+                        "description": "Standard-LLM-Aufrufe mit voller Parameterkontrolle. Schalten Sie mehrere Modelle in Reihe für spezialisierte Verarbeitung."
+                    },
+                    "parallelization": {
+                        "title": "Parallelisierung",
+                        "description": "Führen Sie einen Prompt gegen mehrere KI-Modelle gleichzeitig aus (z. B. GPT-5, Claude und Gemini zugleich) und nutzen Sie dann ein Aggregator-Modell, um eine einzige, überlegene Antwort zu synthetisieren. Ideal für Faktenchecks, Synthese diverser Perspektiven und robuste Analysen."
+                    },
+                    "routing": {
+                        "title": "Routing",
+                        "description": "Erstellen Sie bedingte Logik, die basierend auf dem Eingabeinhalt dynamisch den nächsten Knoten oder das nächste Modell auswählt. Bauen Sie zustandsbehaftete Agenten, die ihre Strategie anpassen, an spezialisierte Modelle routen oder komplexe Anfragen automatisch eskalieren."
+                    }
+                }
+            }
+        },
+        "integratedExperience": {
+            "title": "Integriertes Chat- & Graph-Erlebnis",
+            "description": "Wechseln Sie nahtlos zwischen dem visuellen Graphen und der aufgeräumten Chat-Oberfläche. Die Chat-Ansicht präsentiert eine benutzerfreundliche Konversation, während der Graph die zugrunde liegende Komplexität erfasst. Starten Sie eine Unterhaltung im Chat und springen Sie dann in den Graphen, um den Workflow mittendrin zu verzweigen, zusammenzuführen oder zu ändern. Jede Nachricht im Chat entspricht einem Knoten in Ihrem Graphen – volle Transparenz, null Abstraktionsverlust."
+        },
+        "modelManagement": {
+            "title": "Erweitertes Modellmanagement via OpenRouter",
+            "description": "Greifen Sie über einen einzigen API-Schlüssel auf 300+ KI-Modelle zu. Die tiefe OpenRouter-Integration von Meridian bietet:",
+            "items": {
+                "pinning": {
+                    "title": "Modell-Pinning",
+                    "description": "Halten Sie häufig genutzte Modelle griffbereit."
+                },
+                "filtering": {
+                    "title": "Intelligentes Filtern",
+                    "description": "Blenden Sie kostenlose oder kostenpflichtige Modelle je nach Bedarf aus."
+                },
+                "transparency": {
+                    "title": "Kostentransparenz",
+                    "description": "Sehen Sie den Preis pro Token und die Kontextfenstergröße vor der Ausführung."
+                },
+                "control": {
+                    "title": "Parameterkontrolle",
+                    "description": "Setzen Sie globale Standards und überschreiben Sie diese pro Canvas oder pro Knoten."
+                }
+            },
+            "supported": "Unterstützte Anbieter: OpenAI, Anthropic, Google, Mistral, Meta und Dutzende von Open-Source-Modellen."
+        },
+        "technicalTooling": {
+            "title": "Rich Content & Technische Tools",
+            "description": "Meridian ist für technische Workflows gebaut, mit erstklassigem Support für entwicklerzentrierte Inhalte.",
+            "items": {
+                "markdown": {
+                    "title": "Voller Markdown-Support",
+                    "description": "Überschriften, Tabellen, Listen und Formatierungen werden wunderschön gerendert."
+                },
+                "latex": {
+                    "title": "LaTeX-Rendering",
+                    "description": "Komplexe mathematische Notation mit KaTeX-Integration."
+                },
+                "syntax": {
+                    "title": "Syntax-Highlighting",
+                    "description": "220+ Programmiersprachen mit dynamischem Grammatik-Laden für minimalen Speicherbedarf."
+                },
+                "diagrams": {
+                    "title": "KI-gestützte Diagramme",
+                    "description": "Generieren Sie Mermaid.js-Flussdiagramme, Sequenzdiagramme, Gantt-Charts und Entity-Diagramme direkt im Chat. Exportieren Sie als PNG oder bearbeiten Sie den Quellcode."
+                }
+            }
+        },
+        "enterpriseFoundation": {
+            "title": "Enterprise-Grade Basis",
+            "description": "Von Grund auf mit Sicherheit, Skalierbarkeit und Observability im Hinterkopf gebaut.",
+            "items": {
+                "auth": {
+                    "title": "Sichere Authentifizierung",
+                    "description": "OAuth 2.0 (GitHub, Google) + Benutzername/Passwort mit JWT und rotierenden Refresh-Tokens."
+                },
+                "storage": {
+                    "title": "Hybrider Datenspeicher",
+                    "description": "PostgreSQL für strukturierte Daten, Neo4j für Graph-Beziehungen – optimale Performance für Abfragen und Traversierungen."
+                },
+                "cost": {
+                    "title": "Kostenverfolgung",
+                    "description": "Jeder API-Aufruf zeigt die genauen Kosten und den Token-Verbrauch in der Chat-Fußzeile an. Überwachen Sie Ausgaben auf einen Blick."
+                },
+                "sentry": {
+                    "title": "Sentry-Integration",
+                    "description": "Optionales Echtzeit-Fehlertracking und Performance-Monitoring für Frontend und Backend."
+                },
+                "docker": {
+                    "title": "Docker-Deployment",
+                    "description": "Produktionsbereites Setup mit vorgefertigten Images oder Builds aus dem Quellcode. Deployment mit einem Befehl und persistenten Daten-Volumes."
+                }
+            }
+        }
+    },
+    "footer": {
+        "brand": "Meridian",
+        "credits": "Gemacht mit {heart} von Mathis Verstrepen • MIT-lizenziert"
+    }
+}

@@ -1,0 +1,285 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "useCases": "Casos de Uso",
+        "features": "Funcionalidades",
+        "docs": "Documentación",
+        "pricing": "Precios"
+    },
+    "cta": {
+        "getStarted": "Comenzar",
+        "viewGithub": "Ver en GitHub",
+        "learnMore": "Más información"
+    },
+    "hero": {
+        "badge": "Código Abierto • Licencia MIT",
+        "title": "IA Conversacional Impulsada por Grafos",
+        "subtitle": "Diseña, visualiza y ejecuta flujos de trabajo de IA complejos en un lienzo interactivo. Crea conversaciones ramificadas, orquesta razonamientos de múltiples pasos e interactúa a través de una experiencia de chat pulida.",
+        "stats": {
+            "models": "50+ Modelos",
+            "openSource": "100% Código Abierto",
+            "selfHosted": "Autoalojado"
+        }
+    },
+    "problem": {
+        "header": {
+            "badge": "El Desafío",
+            "title": "Por qué el chat lineal se queda corto",
+            "subtitle": "Tu pensamiento no es una línea recta: se ramifica, explora e itera. El chat de IA tradicional te fuerza a un solo hilo, perdiendo contexto y claridad."
+        },
+        "linear": {
+            "title": "Chat Lineal",
+            "user": "Tú",
+            "ai": "IA",
+            "messages": {
+                "user1": "Mi endpoint de API es muy lento. ¿Cómo puedo optimizarlo?",
+                "ai1": "Podrías optimizar la consulta a la base de datos añadiendo un índice...",
+                "frustration1": "Espera, ¿y si el caché es mejor? Subes para reconsiderar...",
+                "user2": "En realidad, ¿podemos probar una estrategia de caché?",
+                "ai2": "Claro, aquí tienes cómo implementar caché con Redis...",
+                "frustration2": "Ahora tienes dos soluciones compitiendo en un hilo desordenado.",
+                "user3": "¿Qué tal el procesamiento asíncrono? ¿Y puedes mostrarme la consulta a la BDD de nuevo?",
+                "frustration3": "Contexto perdido. Estás copiando, pegando y empezando de nuevo."
+            },
+            "result": {
+                "label": "Resultado:",
+                "summary": "Contexto perdido, tiempo perdido, confusión"
+            }
+        },
+        "visual": {
+            "title": "Flujo de Trabajo Visual",
+            "nodes": {
+                "initial": {
+                    "title": "Prompt Inicial",
+                    "subtitle": "\"Optimizar API lenta\""
+                },
+                "context": {
+                    "title": "Contexto",
+                    "subtitle": "api_endpoint.py"
+                },
+                "branchA": {
+                    "title": "Rama A",
+                    "subtitle": "Indexación BDD"
+                },
+                "branchB": {
+                    "title": "Rama B",
+                    "subtitle": "Caché Redis"
+                },
+                "branchC": {
+                    "title": "Rama C",
+                    "subtitle": "Proceso Async"
+                }
+            },
+            "benefits": {
+                "parallel": {
+                    "highlight": "Exploración paralela",
+                    "text": "de múltiples soluciones"
+                },
+                "context": {
+                    "highlight": "Contexto preservado",
+                    "text": "en cada rama"
+                },
+                "clarity": {
+                    "highlight": "Claridad visual",
+                    "text": "de todo tu flujo de trabajo"
+                }
+            },
+            "result": {
+                "label": "Resultado:",
+                "summary": "Todas las ideas organizadas, nada se pierde"
+            }
+        }
+    },
+    "meridian": {
+        "header": {
+            "badge": "La Solución",
+            "title1": "Presentando Meridian",
+            "title2": "Donde las Conversaciones se vuelven Flujos de Trabajo",
+            "subtitle": "Meridian transforma la interacción con la IA en un grafo visual. Conecta nodos para construir flujos de trabajo potentes que preservan el rico contexto y las relaciones entre ideas, desbloqueando capacidades que los chats lineales no pueden igualar."
+        },
+        "differentiators": {
+            "title": "Qué hace diferente a Meridian",
+            "items": {
+                "visual": {
+                    "title": "Diseño Visual Primero",
+                    "text": "Ve todo tu flujo de trabajo de IA de un vistazo. No más contexto oculto o saltos misteriosos entre temas."
+                },
+                "context": {
+                    "title": "Gestión Real del Contexto",
+                    "text": "Ramifica conversaciones naturalmente, fusiona insights de múltiples fuentes y mantén un control preciso sobre qué información fluye a dónde."
+                },
+                "orchestration": {
+                    "title": "Orquestación de Modelos",
+                    "text": "Enruta consultas a modelos especializados, ejecuta comparaciones paralelas y sintetiza resultados automáticamente."
+                },
+                "developer": {
+                    "title": "Nativo para Desarrolladores",
+                    "text": "Integración profunda con GitHub, resaltado de sintaxis para más de 220 lenguajes y soporte integrado para LaTeX."
+                }
+            }
+        }
+    },
+    "coreFeatures": {
+        "header": {
+            "badge": "Características Principales",
+            "title": "Construido para Flujos de Trabajo Complejos",
+            "subtitle": "Meridian proporciona un conjunto de herramientas potente y centrado en el desarrollador para ir más allá de las limitaciones del chat lineal."
+        },
+        "nav": {
+            "visualCanvas": "Lienzo de Grafo Visual",
+            "nodeSystem": "Sistema de Nodos Modular",
+            "integratedExperience": "Experiencia Integrada Chat y Grafo",
+            "modelManagement": "Gestión Avanzada de Modelos",
+            "technicalTooling": "Contenido Rico y Herramientas",
+            "enterpriseFoundation": "Base de Nivel Empresarial"
+        },
+        "visualCanvas": {
+            "title": "Lienzo de Grafo Visual",
+            "description": "El corazón de Meridian es un lienzo infinito e interactivo donde arquitecturas flujos de trabajo de IA conectando nodos. Arrastra, suelta y organiza componentes para visualizar lógica compleja que sería imposible de seguir en un chat lineal. Observa el flujo de ejecución en tiempo real con conexiones animadas e indicadores de estado en vivo.",
+            "executionControl": {
+                "title": "Control de Ejecución",
+                "description": "Selecciona cualquier nodo para ejecutar precisamente lo que necesitas:",
+                "items": {
+                    "runUpstream": {
+                        "title": "Ejecutar Ascendentes",
+                        "description": "Ejecuta todos los nodos padres que alimentan tu selección."
+                    },
+                    "runDownstream": {
+                        "title": "Ejecutar Descendentes",
+                        "description": "Ejecuta los nodos seleccionados y todos sus hijos."
+                    },
+                    "runSelected": {
+                        "title": "Ejecutar Selección",
+                        "description": "Ejecuta solo los nodos específicos."
+                    },
+                    "runAll": {
+                        "title": "Ejecutar Todo",
+                        "description": "Procesa el grafo completo de principio a fin."
+                    }
+                },
+                "imagesAlt": {
+                    "graphView": "Un lienzo de grafo visual mostrando nodos y conexiones",
+                    "closeUpNode": "Primer plano de un nodo mostrando controles de ejecución",
+                    "executionControls": "Interfaz de control de ejecución al ejecutar un grupo de nodos"
+                }
+            }
+        },
+        "nodeSystem": {
+            "title": "Sistema de Nodos Modular",
+            "description": "Combina una amplia gama de nodos especializados para alimentar tu IA con contexto rico, realizar procesamientos complejos y construir lógica adaptativa.",
+            "inputNodes": {
+                "title": "Nodos de Entrada: Alimenta tu IA con Contexto Rico",
+                "items": {
+                    "prompt": {
+                        "title": "Nodo de Prompt",
+                        "description": "Entrada de texto estructurada con soporte para plantillas."
+                    },
+                    "attachment": {
+                        "title": "Nodo de Adjunto",
+                        "description": "Sube PDFs, imágenes, CSVs y documentos que se convierten en parte del contexto de tu flujo de trabajo."
+                    },
+                    "github": {
+                        "title": "Nodo de GitHub",
+                        "description": "Conecta tu cuenta de GitHub para explorar repositorios e inyectar bases de código completas, archivos específicos o directorios como contexto. Perfecto para revisión de código, generación de documentación y análisis de arquitectura."
+                    }
+                }
+            },
+            "generatorNodes": {
+                "title": "Nodos Generadores: Unidades de Procesamiento Inteligente",
+                "items": {
+                    "textToText": {
+                        "title": "Texto a Texto",
+                        "description": "Llamadas estándar a LLM con control total de parámetros. Conecta múltiples modelos en secuencia para procesamiento especializado."
+                    },
+                    "parallelization": {
+                        "title": "Paralelización",
+                        "description": "Ejecuta un prompt contra múltiples modelos de IA simultáneamente (ej. GPT-5, Claude y Gemini a la vez), luego usa un modelo agregador para sintetizar una respuesta única y superior. Ideal para verificación de hechos, síntesis de perspectivas diversas y análisis robusto."
+                    },
+                    "routing": {
+                        "title": "Enrutamiento",
+                        "description": "Crea lógica condicional que selecciona dinámicamente el siguiente nodo o modelo basado en el contenido de entrada. Construye agentes con estado que adaptan su estrategia, enrutan a modelos especializados o escalan consultas complejas automáticamente."
+                    }
+                }
+            }
+        },
+        "integratedExperience": {
+            "title": "Experiencia Integrada de Chat y Grafo",
+            "description": "Cambia sin problemas entre el grafo visual y una interfaz de chat limpia. La vista de chat presenta una conversación amigable mientras el grafo captura la complejidad subyacente. Comienza una conversación en el chat, luego salta al grafo para ramificar, fusionar o modificar el flujo de trabajo a mitad de camino. Cada mensaje en el chat corresponde a un nodo en tu grafo: transparencia total, cero pérdida de abstracción."
+        },
+        "modelManagement": {
+            "title": "Gestión Avanzada de Modelos vía OpenRouter",
+            "description": "Accede a más de 300 modelos de IA a través de una sola clave API. La integración profunda de Meridian con OpenRouter proporciona:",
+            "items": {
+                "pinning": {
+                    "title": "Fijación de Modelos",
+                    "description": "Mantén tus modelos usados frecuentemente al alcance de la mano."
+                },
+                "filtering": {
+                    "title": "Filtrado Inteligente",
+                    "description": "Oculta modelos gratuitos o de pago según tus necesidades."
+                },
+                "transparency": {
+                    "title": "Transparencia de Costos",
+                    "description": "Ve el precio por token y el tamaño de la ventana de contexto antes de ejecutar."
+                },
+                "control": {
+                    "title": "Control de Parámetros",
+                    "description": "Establece valores predeterminados globales y anúlalos por lienzo o por nodo."
+                }
+            },
+            "supported": "Proveedores soportados: OpenAI, Anthropic, Google, Mistral, Meta y docenas de modelos de código abierto."
+        },
+        "technicalTooling": {
+            "title": "Contenido Rico y Herramientas Técnicas",
+            "description": "Meridian está construido para flujos de trabajo técnicos con soporte de primera clase para contenido centrado en desarrolladores.",
+            "items": {
+                "markdown": {
+                    "title": "Soporte Completo de Markdown",
+                    "description": "Encabezados, tablas, listas y formato renderizados maravillosamente."
+                },
+                "latex": {
+                    "title": "Renderizado LaTeX",
+                    "description": "Notación matemática compleja con integración de KaTeX."
+                },
+                "syntax": {
+                    "title": "Resaltado de Sintaxis",
+                    "description": "Más de 220 lenguajes de programación con carga dinámica de gramática para una huella mínima."
+                },
+                "diagrams": {
+                    "title": "Diagramas impulsados por IA",
+                    "description": "Genera diagramas de flujo Mermaid.js, diagramas de secuencia, gráficos de Gantt y diagramas de entidad directamente en el chat. Exporta como PNG o edita el código fuente."
+                }
+            }
+        },
+        "enterpriseFoundation": {
+            "title": "Base de Nivel Empresarial",
+            "description": "Construido desde cero teniendo en cuenta la seguridad, la escalabilidad y la observabilidad.",
+            "items": {
+                "auth": {
+                    "title": "Autenticación Segura",
+                    "description": "OAuth 2.0 (GitHub, Google) + usuario/contraseña con JWT y rotación de tokens de actualización."
+                },
+                "storage": {
+                    "title": "Almacenamiento de Datos Híbrido",
+                    "description": "PostgreSQL para datos estructurados, Neo4j para relaciones de grafos: rendimiento óptimo tanto para consultas como para recorridos."
+                },
+                "cost": {
+                    "title": "Seguimiento de Costos",
+                    "description": "Cada llamada a la API muestra el costo exacto y el uso de tokens en el pie de página del chat. Monitorea el gasto de un vistazo."
+                },
+                "sentry": {
+                    "title": "Integración con Sentry",
+                    "description": "Seguimiento de errores en tiempo real y monitoreo de rendimiento opcionales tanto para frontend como para backend."
+                },
+                "docker": {
+                    "title": "Despliegue con Docker",
+                    "description": "Configuración lista para producción con imágenes pre-construidas o compilaciones desde el origen. Despliegue con un solo comando con volúmenes de datos persistentes."
+                }
+            }
+        }
+    },
+    "footer": {
+        "brand": "Meridian",
+        "credits": "Hecho con {heart} por Mathis Verstrepen • Licencia MIT"
+    }
+}
