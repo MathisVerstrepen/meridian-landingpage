@@ -64,6 +64,7 @@ const syntaxShowcase = [
                             :src="item.src"
                             :alt="item.label"
                             class="h-full w-full object-cover object-top"
+                            loading="lazy"
                         />
                     </div>
                     <!-- Overlay Label -->

@@ -44,6 +44,7 @@ defineProps<{
                     src="/images/integrated_chat_1.png"
                     alt="Graph View Interface"
                     class="h-auto w-full object-cover"
+                    loading="lazy"
                 />
             </div>
 
@@ -62,6 +63,7 @@ defineProps<{
                     src="/images/integrated_chat_2.png"
                     alt="Chat View Interface"
                     class="h-auto w-full object-cover"
+                    loading="lazy"
                 />
             </div>
         </div>

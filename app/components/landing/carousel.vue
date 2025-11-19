@@ -126,7 +126,12 @@ onMounted(() => {
                 :aria-label="`Image ${index + 1} of ${images.length}`"
                 @click="openFullscreen"
             >
-                <NuxtImg :src="image.src" :alt="image.label" class="h-full w-full object-contain" />
+                <NuxtImg
+                    :src="image.src"
+                    :alt="image.label"
+                    class="h-full w-full object-contain"
+                    loading="lazy"
+                />
                 <div
                     class="pointer-events-none absolute inset-0 bg-linear-to-t from-black/60
                         via-black/20 to-transparent"
@@ -230,6 +235,7 @@ onMounted(() => {
                                 :src="images[currentIndex].src"
                                 :alt="images[currentIndex].label"
                                 class="h-full w-full object-contain shadow-2xl"
+                                loading="lazy"
                             />
                         </Transition>
 
