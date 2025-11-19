@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import { ref, onMounted, onBeforeUnmount, computed } from 'vue';
+const { t } = useI18n();
 
 // Define sections with their IDs and display labels for the navigation button
 const sections = [
-    { id: 'hero', label: 'Home', icon: 'mdi:home-variant-outline' },
-    { id: 'problem', label: 'The Problem', icon: 'mdi:lightbulb-outline' },
-    { id: 'meridian', label: 'The Solution', icon: 'mdi:star-circle-outline' },
-    { id: 'features', label: 'Core Features', icon: 'mdi:star-four-points-outline' },
+    { id: 'hero', label: '', icon: 'mdi:home-variant-outline' },
+    { id: 'problem', label: 'problem.header.badge', icon: 'mdi:lightbulb-outline' },
+    { id: 'meridian', label: 'meridian.header.badge', icon: 'mdi:star-circle-outline' },
+    { id: 'features', label: 'coreFeatures.header.badge', icon: 'mdi:star-four-points-outline' },
 ];
 
 const activeSection = ref(sections[0].id);
@@ -112,13 +112,15 @@ const scrollToNext = () => {
                         left-1/2 z-50 flex -translate-x-1/2 cursor-pointer items-center gap-3
                         rounded-full px-6 py-3 shadow-lg backdrop-blur-md transition-all
                         hover:scale-105"
-                    :aria-label="`Scroll to ${nextSection.label}`"
+                    :aria-label="`Scroll to ${t(nextSection.label)}`"
                 >
                     <Icon
                         :name="nextSection.icon"
                         class="text-ember-glow h-5 w-5 transition-colors group-hover:text-white"
                     />
-                    <span class="text-sm font-semibold tracking-wide">{{ nextSection.label }}</span>
+                    <span class="text-sm font-semibold tracking-wide">{{
+                        t(nextSection.label)
+                    }}</span>
                     <Icon
                         name="mdi:chevron-down"
                         class="h-5 w-5 opacity-70 group-hover:opacity-100"

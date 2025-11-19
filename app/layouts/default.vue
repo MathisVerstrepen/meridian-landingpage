@@ -1,15 +1,17 @@
 <script lang="ts" setup>
-const { t } = useI18n();
+const { t, locale, locales, setLocale } = useI18n();
 const route = useRoute();
 
 // Mobile menu state
 const isMobileMenuOpen = ref(false);
+const isLangMenuOpen = ref(false);
 
-// Close mobile menu when route changes
+// Close menus when route changes
 watch(
     () => route.fullPath,
     () => {
         isMobileMenuOpen.value = false;
+        isLangMenuOpen.value = false;
     },
 );
 
@@ -65,6 +67,58 @@ const navLinks = [
 
                     <!-- Desktop CTA Buttons -->
                     <div class="hidden items-center space-x-6 md:flex">
+                        <!-- Language Selector -->
+                        <div class="relative">
+                            <button
+                                @click="isLangMenuOpen = !isLangMenuOpen"
+                                class="text-obsidian/70 hover:text-obsidian flex items-center
+                                    space-x-1 text-sm font-medium transition-colors"
+                            >
+                                <Icon name="heroicons:language" class="h-5 w-5" />
+                                <span class="uppercase">{{ locale }}</span>
+                                <Icon name="heroicons:chevron-down" class="h-3 w-3 opacity-50" />
+                            </button>
+
+                            <!-- Backdrop for closing dropdown -->
+                            <div
+                                v-if="isLangMenuOpen"
+                                class="fixed inset-0 z-10"
+                                @click="isLangMenuOpen = false"
+                            ></div>
+
+                            <!-- Dropdown -->
+                            <div
+                                v-if="isLangMenuOpen"
+                                class="border-obsidian/10 absolute right-0 z-20 mt-2
+                                    w-32 origin-top-right rounded-lg border bg-[rgb(236,228,208)]
+                                    p-1 shadow-lg focus:outline-none flex flex-col space-y-1"
+                            >
+                                <button
+                                    v-for="l in locales"
+                                    :key="l.code"
+                                    @click="
+                                        setLocale(l.code);
+                                        isLangMenuOpen = false;
+                                    "
+                                    class="flex w-full items-center justify-between rounded-md px-3
+                                        py-2 text-sm"
+                                    :class="
+                                        locale === l.code
+                                            ? 'bg-obsidian/5 text-ember-glow font-semibold'
+                                            : `text-obsidian/70 hover:bg-obsidian/5
+                                                hover:text-obsidian`
+                                    "
+                                >
+                                    {{ l.name }}
+                                    <Icon
+                                        v-if="locale === l.code"
+                                        name="heroicons:check"
+                                        class="h-4 w-4"
+                                    />
+                                </button>
+                            </div>
+                        </div>
+
                         <a
                             href="https://github.com/MathisVerstrepen/Meridian"
                             target="_blank"
@@ -131,6 +185,32 @@ const navLinks = [
                         </NuxtLink>
 
                         <div class="border-obsidian/10 mt-4 border-t pt-4">
+                            <!-- Mobile Language Selector -->
+                            <div class="mb-4 flex items-center justify-between px-3">
+                                <span
+                                    class="text-obsidian/80 flex items-center space-x-2 font-medium"
+                                >
+                                    <Icon name="heroicons:language" class="h-5 w-5" />
+                                    <span>Language</span>
+                                </span>
+                                <div class="bg-obsidian/5 flex rounded-lg p-1">
+                                    <button
+                                        v-for="l in locales"
+                                        :key="l.code"
+                                        @click="setLocale(l.code)"
+                                        class="rounded-md px-3 py-1 text-sm font-medium
+                                            transition-all"
+                                        :class="
+                                            locale === l.code
+                                                ? 'text-ember-glow bg-white shadow-sm'
+                                                : 'text-obsidian/60 hover:text-obsidian'
+                                        "
+                                    >
+                                        {{ l.code.toUpperCase() }}
+                                    </button>
+                                </div>
+                            </div>
+
                             <a
                                 href="https://github.com/MathisVerstrepen/Meridian"
                                 target="_blank"
