@@ -46,16 +46,17 @@ function scrollToFeature(id: string) {
                 class="bg-obsidian/5 mb-6 inline-flex items-center space-x-2 rounded-full px-4 py-2"
             >
                 <Icon name="mdi:star-four-points-outline" class="text-ember-glow h-5 w-5" />
-                <span class="text-obsidian/70 text-sm font-semibold">Core Features</span>
+                <span class="text-obsidian/70 text-sm font-semibold">{{
+                    $t('coreFeatures.header.badge')
+                }}</span>
             </div>
             <h2
                 class="text-obsidian mb-6 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
             >
-                Built for Complex Workflows
+                {{ $t('coreFeatures.header.title') }}
             </h2>
             <p class="text-obsidian/70 mx-auto max-w-3xl text-lg leading-8 sm:text-xl">
-                Meridian provides a powerful, developer-centric toolset to move beyond the
-                limitations of linear chat.
+                {{ $t('coreFeatures.header.subtitle') }}
             </p>
         </div>
 
@@ -77,7 +78,9 @@ function scrollToFeature(id: string) {
                                 ]"
                             >
                                 <Icon name="mdi:sitemap-outline" class="h-6 w-6 shrink-0" />
-                                <span class="font-semibold">Visual Graph Canvas</span>
+                                <span class="font-semibold">{{
+                                    $t('coreFeatures.nav.visualCanvas')
+                                }}</span>
                             </button>
                         </li>
                         <li>
@@ -92,7 +95,9 @@ function scrollToFeature(id: string) {
                                 ]"
                             >
                                 <Icon name="mdi:toy-brick-outline" class="h-6 w-6 shrink-0" />
-                                <span class="font-semibold">Modular Node System</span>
+                                <span class="font-semibold">{{
+                                    $t('coreFeatures.nav.nodeSystem')
+                                }}</span>
                             </button>
                         </li>
                         <li>
@@ -107,7 +112,9 @@ function scrollToFeature(id: string) {
                                 ]"
                             >
                                 <Icon name="mdi:swap-horizontal-bold" class="h-6 w-6 shrink-0" />
-                                <span class="font-semibold">Integrated Chat & Graph</span>
+                                <span class="font-semibold">{{
+                                    $t('coreFeatures.nav.integratedExperience')
+                                }}</span>
                             </button>
                         </li>
                         <li>
@@ -122,7 +129,9 @@ function scrollToFeature(id: string) {
                                 ]"
                             >
                                 <Icon name="mdi:tune-variant" class="h-6 w-6 shrink-0" />
-                                <span class="font-semibold">Advanced Model Management</span>
+                                <span class="font-semibold">{{
+                                    $t('coreFeatures.nav.modelManagement')
+                                }}</span>
                             </button>
                         </li>
                         <li>
@@ -137,7 +146,9 @@ function scrollToFeature(id: string) {
                                 ]"
                             >
                                 <Icon name="mdi:tools" class="h-6 w-6 shrink-0" />
-                                <span class="font-semibold">Rich Content & Tooling</span>
+                                <span class="font-semibold">{{
+                                    $t('coreFeatures.nav.technicalTooling')
+                                }}</span>
                             </button>
                         </li>
                         <li>
@@ -152,7 +163,9 @@ function scrollToFeature(id: string) {
                                 ]"
                             >
                                 <Icon name="mdi:shield-check-outline" class="h-6 w-6 shrink-0" />
-                                <span class="font-semibold">Enterprise-Grade Foundation</span>
+                                <span class="font-semibold">{{
+                                    $t('coreFeatures.nav.enterpriseFoundation')
+                                }}</span>
                             </button>
                         </li>
                     </ul>
